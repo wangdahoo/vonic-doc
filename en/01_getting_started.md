@@ -9,21 +9,22 @@ Vonic has several dependencies, make sure you have introduced them before your a
 
 ## CDN
 You can access to the latest versions of the resources via [unpkg/vonic](https://unpkg.com/vonic)
+> current stable version is v0.6.0
 
 ```html
 <!-- ionic stylesheet -->
-<link rel="stylesheet" href="https://unpkg.com/vonic/dist/ionic/css/ionic.css">
+<link rel="stylesheet" href="https://unpkg.com/vonic@0.6.0/dist/ionic/css/ionic.css">
 <!-- axios, vue & vue-router -->
 <script src="https://unpkg.com/axios@0.15.3/dist/axios.min.js"></script>
 <script src="https://unpkg.com/vue@1.0.28/dist/vue.min.js"></script>
 <script src="https://unpkg.com/vue-router@0.7.13/dist/vue-router.min.js"></script>
 
 <!-- and then, vonic core -->
-<link rel="stylesheet" href="https://unpkg.com/vonic/dist/vonic.min.js">
+<link rel="stylesheet" href="https://unpkg.com/vonic@0.6.0/dist/vonic.min.js">
 ```
 
 ## Hello World
-Now, it's time to make Hello-World with Vonic. Online Demo [Here](https://jsfiddle.net/wangdahoo/x2wf0x4j/).
+Now, it's time to make a Hello-World with Vonic. Online Demo [Here](https://jsfiddle.net/wangdahoo/x2wf0x4j/).
 
 Remember? Vonic is a framework for SPA (Single Page Application). So what we talk about here, is not to write a single page, but a skeleton of SPA.
 
@@ -69,7 +70,7 @@ const About = {
 3.Define Routes
 
 ```js
-const routers = {
+const routes = {
   '/': {
     component: Index
   },
@@ -84,7 +85,7 @@ const routers = {
 
 ```
 Vue.use(Vonic.app, {
-  routers: routers,
+  routes: routes,
   defaultRouterUrl: '/'
 })
 ```
