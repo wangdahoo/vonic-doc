@@ -542,9 +542,15 @@ Vonic 在 ionic 丰富的列表类样式基础上，做了完备的1px方案。
 | pagerColor | 导航颜色 | String | 否 | #333 |
 
 ##### 方法：
-- Void go(index :Number) 跳转到某一页
-- Void next() 跳转到下一页
-- Void prev() 跳转到上一页
+
+###### Void go(index :Number) 
+> 跳转到某一页
+
+###### Void next() 
+> 跳转到下一页
+
+###### Void prev() 
+> 跳转到上一页
 
 ## 滚动
 
@@ -687,34 +693,283 @@ $dialog.confirm({
 
 ##### 方法：
 
-- Promise alert(options: Object)
+###### Promise alert(options: Object)
 
-options 参数:
-
-| 字段名 | 描述 | 类型 | 必选 | 默认值 |
-|-----|-----|-----|-----|-----|
-| effect | 效果 default、scale、slide | string | 否 | default |
-| title | 标题 | string | 否 | 提示 |
-| content | 内容 | string | 否 | 无 |
-| okText | 按钮文本 | string | 否 | 确定 |
-| okTheme | 按钮主题 | string | 否 | assertive |
-| theme | 主题样式 default、ios | string | 否 | default |
-
-> 当 theme 值为 ios 时，其他主题相关的参数（okTheme, cancelTheme，effect等）将不再起作用。
-
-- Promise confirm(options: Object)
-
-options 参数:
+options 参数：
 
 | 字段名 | 描述 | 类型 | 必选 | 默认值 |
 |-----|-----|-----|-----|-----|
-| effect | 效果 default/scale/slide | string | 否 | default |
-| title | 标题 | string | 否 | 提示 |
-| content | 内容 | string | 否 | 无 |
-| okText | 确定按钮文本 | string | 否 | 确定 |
-| okTheme | 确定按钮主题 | string | 否 | assertive |
-| cancelText | 取消按钮文本 | string | 否 | 确定 |
-| cancelTheme | 取消按钮主题 | string | 否 | default |
-| theme | 主题样式 default、ios | string | 否 | default |
+| effect | 效果 default、scale、slide | String | 否 | default |
+| title | 标题 | String | 否 | 提示 |
+| content | 内容 | String | 否 | 无 |
+| okText | 按钮文本 | String | 否 | 确定 |
+| okTheme | 按钮主题 | String | 否 | assertive |
+| theme | 主题样式 default、ios | String | 否 | default |
 
 > 当 theme 值为 ios 时，其他主题相关的参数（okTheme, cancelTheme，effect等）将不再起作用。
+
+###### Promise confirm(options: Object)
+
+options 参数：
+
+| 字段名 | 描述 | 类型 | 必选 | 默认值 |
+|-----|-----|-----|-----|-----|
+| effect | 效果 default/scale/slide | String | 否 | default |
+| title | 标题 | String | 否 | 提示 |
+| content | 内容 | String | 否 | 无 |
+| okText | 确定按钮文本 | String | 否 | 确定 |
+| okTheme | 确定按钮主题 | String | 否 | assertive |
+| cancelText | 取消按钮文本 | String | 否 | 确定 |
+| cancelTheme | 取消按钮主题 | String | 否 | default |
+| theme | 主题样式 default、ios | String | 否 | default |
+
+> 当 theme 值为 ios 时，其他主题相关的参数（okTheme, cancelTheme，effect等）将不再起作用。
+
+
+## 弹层
+
+##### 服务：$popup
+
+> 该服务需要 Vonic.app 插件安装后才能使用
+
+##### 用法：
+
+```js
+let options = {
+  effect: 'scale',
+  title: '',
+  buttons: [
+    {text: '确定'},
+    {text: '取消'},
+  ]
+}
+
+let popup = $popup.fromTemplate('<p style="margin-bottom: 0; text-align: center;">自定义内容</p>', options)
+
+popup.show().then((buttonIndex) => {
+  console.log(buttonIndex)
+})
+```
+
+##### 方法：
+
+###### Popup fromTemplate(template: String, options: Object) 
+> 按模板字符串创建弹层实例
+
+template：自定义popup模板字符串
+
+options 参数：
+
+| 字段名 | 描述 | 类型 | 必选 | 默认值 |
+|-----|-----|-----|-----|-----|
+| effect | 效果 default/scale/slide | String | 否 | default |
+| title | 标题 | String | 否 | 无 |
+| cssClass | 自定义样式类 | String | 否 | 无 |
+| buttons | 按钮定义 | Array | 否 | 无 |
+
+##### Popup 实例方法：
+
+###### Promise show() 
+> 显示弹层
+
+###### Void hide() 
+> 关闭弹层
+
+## 模态窗
+
+##### 服务：$vonicModal
+
+##### 用法：[参考官方范例](https://wangdahoo.github.io/vonic/docs/#!/advanced/modal)
+
+##### 方法：
+
+###### Void fromComponent(modalRef: String, modalComponent: Object)
+
+> 注册模态窗
+
+###### Void show(modalRef: String)
+
+> 显示模态窗
+
+###### Void hide(modalRef: String)
+
+> 关闭模态窗
+
+## ActionSheet
+
+##### 服务：$actionSheet
+
+##### 用法：
+
+```js
+$actionSheet.show({
+  // 支持三种主题样式 ios/android/weixin
+  theme: 'weixin',
+  title: '标题',
+  buttons: {
+    'Action - 1': () => {
+      console.log('action 1 called.')
+    },
+
+    'Action - 2': () => {
+      console.log('action 2 called.')
+    }
+  }
+})
+```
+
+## 侧边栏
+
+##### 服务：$sidebar
+
+> 该服务需要 Vonic.app 插件安装后才能使用
+
+##### 用法：
+```js
+let template = `
+  <p style="font-size: 14; line-height: 18px;">
+    This is my December
+    This is my time of the year
+    This is my December
+    This is all so clear
+  </p>
+`
+let sidebar = $sidebar.fromTemplate(template, {position: 'left'})
+sidebar.open()
+```
+
+##### 方法：
+
+###### Sidebar fromTemplate(template: String, options: Object)
+> 按模板字符串创建侧边栏实例
+
+###### Sidebar fromTemplateUrl(templateUrl: String, options: Object)
+> 按远程模板地址返回的模板字符串创建侧边栏实例
+
+##### 侧边栏实例方法：
+
+###### Void toggle()
+> 切换
+
+###### Void open()
+> 打开
+
+###### Void close()
+> 关闭
+
+
+## Tabbar
+
+##### 指令：v-tabbar
+
+##### 用法：
+
+```html
+<template>
+  <div v-tabbar="{'menus': menus, menuColor: '#888', activeMenuColor: '#FF4400', onMenuClick: menuClicked}">
+    <router-view></router-view>
+  </div>
+</template>
+<script>
+  export default {
+    data() {
+      return {
+        menus: [
+          {
+            iconOn: 'ion-ios-home',
+            iconOff: 'ion-ios-home-outline',
+            text: '首页',
+            path: '/advanced/tabbar/home'
+          },
+          {
+            iconOn: 'ion-ios-pricetags',
+            iconOff: 'ion-ios-pricetags-outline',
+            text: '折扣',
+            path: '/advanced/tabbar/discount'
+          },
+          {
+            iconOn: 'ion-ios-cart',
+            iconOff: 'ion-ios-cart-outline',
+            text: '购物车',
+            path: '/advanced/tabbar/cart'
+          },
+          {
+            iconOn: 'ion-ios-person',
+            iconOff: 'ion-ios-person-outline',
+            text: '我的',
+            path: '/advanced/tabbar/user'
+          }
+        ]
+      }
+    },
+
+    methods: {
+      menuClicked(menuIndex) {
+        console.log(menuIndex)
+      }
+    },
+
+    beforeDestroy() {
+      $tabbar.$emit('hideTabbar')
+    }
+  }
+</script>
+```
+
+对应的嵌套路由配置：
+
+```js
+  // other routes
+  '/advanced/tabbar': {
+    component: TabBar,
+    subRoutes: {
+      '/home': {
+        component: TabBarHome
+      },
+      '/discount': {
+        component: TabBarDiscount
+      },
+      '/cart': {
+        component: TabBarCart
+      },
+      '/user': {
+        component: TabBarUser
+      }
+    }
+  },
+  // other routes
+```
+
+##### 参数：
+| 参数名 | 描述 | 类型 | 必选 | 默认值 |
+|-----|-----|-----|-----|-----|
+| menus | 菜单项列表 | Array | 是 | 无 |
+| menuColor | 菜单字体颜色 | String | 否 | #888 |
+| activeMenuColor | 激活菜单字体颜色 | String | 否 | #EA5A49 |
+| onMenuClick | 菜单点击回调 | Function | 否 | #EA5A49 |
+
+## 本地存储
+
+##### 服务：$storage
+
+> Vonic 对 localStorage 的简易封装
+
+##### 方法：
+
+###### Void set(key: String, value: Object)
+> 保存
+
+###### Void get(key: String)
+> 读取
+
+###### Void remove(key: String)
+> 清除
+
+###### Void clear()
+> 清除全部
+
+###### Void on(key: String, callback: Function)
+> 监听
+
+###### Void off(key: String, callback: Function)
+> 去除监听
