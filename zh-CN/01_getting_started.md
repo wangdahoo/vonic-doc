@@ -24,11 +24,11 @@ Vonic 有以下几个依赖库，在开始写你极（diao）其（de）美（yi
 ```
 
 ## Hello World
-好了，是时候整一个 Hello World 了。线上例子[点击查看](https://jsfiddle.net/wangdahoo/x2wf0x4j/).
+好了，是时候整一个 Hello World 了。[查看在线范例](https://jsfiddle.net/wangdahoo/x2wf0x4j/).
 
-前面讲过，Vonic 是一个用来做单页应用的UI框架。所以，我们这里谈论的 Hello World 可不是一个单个的页面，而是一个单页应用骨架。
+前面讲过，Vonic 是一个用来做单页应用的UI框架。所以，我们这里谈论的 Hello World 不是一个单个的页面，而是一个单页应用骨架。
 
-有了Vonic，只要通过简简单单的4个步骤，就可以完成这个单页应用骨架啦。
+在 Vonic 的帮助下，只需4个简单的步骤，即可完成一个单页应用骨架。
 
 1.应用挂载点
 
@@ -90,4 +90,4 @@ Vue.use(Vonic.app, {
 })
 ```
 
-没错，揍是这么简单。
+没错，就这么简单。

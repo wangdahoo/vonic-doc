@@ -90,4 +90,4 @@ Vue.use(Vonic.app, {
 })
 ```
 
-Yes, That is all.
+Yes! That's all.
