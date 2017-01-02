@@ -542,9 +542,9 @@ Vonic 在 ionic 丰富的列表类样式基础上，做了完备的1px方案。
 | pagerColor | 导航颜色 | String | 否 | #333 |
 
 ##### 方法：
-- void go(index :Number) 跳转到某一页
-- void next() 跳转到下一页
-- void prev() 跳转到上一页
+- Void go(index :Number) 跳转到某一页
+- Void next() 跳转到下一页
+- Void prev() 跳转到上一页
 
 ## 滚动
 
@@ -647,3 +647,74 @@ Vonic 整合了 [VueScroller](https://github.com/wangdahoo/vue-scroller)。关�
 | fields | 字段列表 | Array | 是 | 无 |
 | data | 数据（二维数组） | Array | 是 | 无 |
 | value | 值 | Array | 是 | 无 |
+
+## 对话框
+
+##### 服务：$dialog
+
+##### 用法：
+```js
+/* Alert 警告框 */
+$dialog.alert({
+  // 效果
+  effect: 'default',
+  // 标题
+  title: '提示', 
+  // 内容
+  content: '这是一个警告框',
+  // 按钮文本
+  okText: '确定',
+  // 按钮主题
+  okTheme: 'assertive'
+})
+
+/* Confirm 确认框 */
+$dialog.confirm({
+  // 设置为ios样式
+  theme: 'ios',
+  // 标题
+  title: '在"微信"中打开链接吗?',
+  // 取消按钮文本
+  cancelText: '取消',
+  // 确定按钮文本
+  okText: '打开'
+}).then((res) => {
+  console.log('confirm result: ', res)
+})
+```
+
+[查看更多$dialog使用例子](https://github.com/wangdahoo/vonic/blob/master/demo/components/Popup.vue)
+
+##### 方法：
+
+- Promise alert(options: Object)
+
+options 参数:
+
+| 字段名 | 描述 | 类型 | 必选 | 默认值 |
+|-----|-----|-----|-----|-----|
+| effect | 效果 default、scale、slide | string | 否 | default |
+| title | 标题 | string | 否 | 提示 |
+| content | 内容 | string | 否 | 无 |
+| okText | 按钮文本 | string | 否 | 确定 |
+| okTheme | 按钮主题 | string | 否 | assertive |
+| theme | 主题样式 default、ios | string | 否 | default |
+
+> 当 theme 值为 ios 时，其他主题相关的参数（okTheme, cancelTheme，effect等）将不再起作用。
+
+- Promise confirm(options: Object)
+
+options 参数:
+
+| 字段名 | 描述 | 类型 | 必选 | 默认值 |
+|-----|-----|-----|-----|-----|
+| effect | 效果 default/scale/slide | string | 否 | default |
+| title | 标题 | string | 否 | 提示 |
+| content | 内容 | string | 否 | 无 |
+| okText | 确定按钮文本 | string | 否 | 确定 |
+| okTheme | 确定按钮主题 | string | 否 | assertive |
+| cancelText | 取消按钮文本 | string | 否 | 确定 |
+| cancelTheme | 取消按钮主题 | string | 否 | default |
+| theme | 主题样式 default、ios | string | 否 | default |
+
+> 当 theme 值为 ios 时，其他主题相关的参数（okTheme, cancelTheme，effect等）将不再起作用。

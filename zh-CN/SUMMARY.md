@@ -29,3 +29,4 @@
   * [滚动](04_API.md#滚动)
   * [Vue Scroller](04_API.md#vue-scroller)
   * [级联](04_API.md#级联)
+  * [对话框](04_API.md#对话框)
