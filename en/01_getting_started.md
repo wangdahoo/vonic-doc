@@ -9,18 +9,18 @@ Vonic has several dependencies, make sure you have introduced them before your a
 
 ## CDN
 You can access to the latest versions of the resources via [unpkg/vonic](https://unpkg.com/vonic)
-> current stable version is v0.6.0
+> current stable version is **v1.1.1**
 
 ```html
 <!-- ionic stylesheet -->
-<link rel="stylesheet" href="https://unpkg.com/vonic@0.6.0/dist/ionic/css/ionic.css">
+<link rel="stylesheet" href="https://unpkg.com/vonic@1.1.1/dist/ionic/css/ionic.css">
 <!-- axios, vue & vue-router -->
 <script src="https://unpkg.com/axios@0.15.3/dist/axios.min.js"></script>
 <script src="https://unpkg.com/vue@1.0.28/dist/vue.min.js"></script>
 <script src="https://unpkg.com/vue-router@0.7.13/dist/vue-router.min.js"></script>
 
 <!-- and then, vonic core -->
-<link rel="stylesheet" href="https://unpkg.com/vonic@0.6.0/dist/vonic.min.js">
+<link rel="stylesheet" href="https://unpkg.com/vonic@1.1.1/dist/vonic.min.js">
 ```
 
 ## Hello World
@@ -43,11 +43,11 @@ const Index = {
   template: `
     <div class="page has-navbar" v-nav="{ title: 'Home' }">
       <div class="page-content text-center">
-        <p class="padding">{{ msg }}</p>
+        <p class="padding" v-text="msg"></p>
         
-        <a class="button button-positive" v-link="{ path: '/about' }">
-        	to about
-        </a>
+        <md-button class="button button-assertive" v-link="{ path: '/about' }">
+        	<i class="ion-information-circled"></i> About
+        </md-button>
       </div>
     </div>
   `,
