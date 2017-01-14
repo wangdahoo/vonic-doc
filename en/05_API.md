@@ -1,57 +1,55 @@
 # API
 
-除了查阅API以外，你也可以直接查看[这里](https://github.com/wangdahoo/vonic/tree/master/demo)。
+You can also refer to [demo](https://github.com/wangdahoo/vonic/tree/master/demo) directly.
 
 ## Material Design Button
 
-##### 组件：Vonic.MdButton
+##### Component: Vonic.MdButton
 
-##### 用法：
+##### Usage: 
 ```html
   <md-button class="button button-positive" @click="clicked()">
     Click Me
   </md-button>
 ```
 
-## 输入框
+## Input
 
-##### 组件：Vonic.VonInput
+##### Component: Vonic.VonInput
 
-##### 用法：
+##### Usage: 
 
 ```html
 <von-input 
   type="text" 
   :value.sync="username" 
-  label="用户名"
-  placeholder="用户名/手机/邮箱" 
+  label="Username"
+  placeholder="Username/Phone NO/Email" 
 >
 </von-input>
 ```
 
-##### 属性：
+##### Props: 
 
-| 属性名 | 描述 | 类型 | 必选 | 默认值 |
+| Name  | Description | Type | Required | Default |
 | ----- | ----- | ----- | ----- | ----- |
-| type  | 类型 | String | 否 | text |
-| label  | 标签文字 | String | 否 | - |
-| value  | 值 | String、Number | 是 | - |
-| placeholder | 占位符 | String | 否 | - |
-| floatingLabel | 开启悬浮标签 | String | 否 | false |
+| type  | text/password/email/tel | String | No | text |
+| label  | label text | String | No | - |
+| value  | input value | String、Number | Yes | - |
+| placeholder | placeholder | String | No | - |
+| floatingLabel | enable floating effect | String | No | false |
 
-> 注：VonInput 的 type 属性只支持 text/password/email/tel 四种。
+## Search
 
-## 搜索框
+##### Component: Vonic.Search
 
-##### 组件：Vonic.Search
-
-##### 用法：
+##### Usage: 
 ```html
 <template>
   <div>
     <search 
       :value.sync="keywords" 
-      placeholder="输入关键字" 
+      placeholder="keywords here" 
       :on-search="onSearch" 
       :clear-search="clearSearch"
     ></search>
@@ -82,26 +80,26 @@
 </script>
 ```
 
-##### 属性：
+##### Props: 
 
-| 属性名 | 描述 | 类型 | 必选 | 默认值 |
+| Name  | Description | Type | Required | Default |
 |-----|-----|-----|-----|-----|
-| value | 值 |  String | 是 | 无 |
-| placeholder | 占位符 |  String | 否 | Search |
-| cancelText | 取消按钮文案 |  String | 否 | 取消 |
-| onSearch | 点击搜索回调函数 |  Function | 否 | 无 |
-| clearSearch | 清除搜索回调函数 |  Function | 否 | 无 |
+| value | input value |  String | Yes | 无 |
+| placeholder | placeholder |  String | No | Search |
+| cancelText | cancel button text |  String | No | 取消 |
+| onSearch | callback for `seach` click |  Function | No | - |
+| clearSearch | callback for `clear` click |  Function | No | - |
 
-## 单选框
+## Radio
 
-##### 组件：Vonic.VonRadio
+##### Component: Vonic.VonRadio
 
-##### 用法：
+##### Usage: 
 ```html
 <template>
   <div>
     <div class="item item-divider">
-      选择性别:
+      Gender:
     </div>
     <von-radio :options="genderOptions" :value.sync="gender"></von-radio>
   </div>
@@ -111,31 +109,31 @@
     data(){
       return {
         gender: 0,
-        genderOptions: ["男", "女"]
+        genderOptions: ["Male", "Female"]
       }
     }
   }
 </script>
 ```
 
-##### 属性：
-| 属性名 | 描述 | 类型 | 必选 | 默认值 |
+##### Props: 
+| Name  | Description | Type | Required | Default |
 |-----|-----|-----|-----|-----|
-| options | 选项列表 | Array | 是 | 无 |
-| value | 值 |  Number | 是 | 无 |
-| theme | 主题 |  String | 否 | assertive |
+| options | option list | Array | Yes | - |
+| value | value | Number | Yes | - |
+| theme | theme | String | No | assertive |
 
-## 多选框
+## Checkbox
 
-##### 组件：Vonic.VonCheckbox
+##### Component: Vonic.VonCheckbox
 
-##### 用法：
+##### Usage: 
 
 ```html
 <template>
   <div>
     <div class="item item-divider">
-      选择感兴趣的板块:
+      Chose what you're interested:
     </div>
     <von-checkbox :options="topics" :value.sync="chosenTopics" theme="positive"></von-checkbox>
   </div>
@@ -145,26 +143,26 @@
     data(){
       return {
         chosenTopics: [],
-        topics: ["娱乐", "电影", "减肥", "搞笑", "科技"]
+        topics: ["entertainment", "film", "sports", "funny", "science"]
       }
     }
   }
 </script>
 ```
 
-##### 属性：
+##### Props: 
 
-| 属性名 | 描述 | 类型 | 必选 | 默认值 |
+| Name  | Description | Type | Required | Default |
 |-----|-----|-----|-----|-----|
-| options | 选项列表 | Array | 是 | 无 |
-| value | 值 |  Array | 是 | 无 |
-| theme | 主题 |  String | 否 | assertive |
+| options | option list | Array | Yes | - |
+| value | value | Array | Yes | - |
+| theme | theme | String | No | assertive |
 
-## 开关按钮
+## Toggle
 
-##### 组件：Vonic.VonToggle
+##### Component: Vonic.VonToggle
 
-##### 用法：
+##### Usage: 
 ```html
 <template>
   <div>
@@ -185,18 +183,18 @@
 </script>
 ```
 
-##### 属性：
-| 属性名 | 描述 | 类型 | 必选 | 默认值 |
+##### Props: 
+| Name  | Description | Type | Required | Default |
 |-----|-----|-----|-----|-----|
-| text | 标签文字 | String | 是 | 无 |
-| value | 值 |  Boolean | 是 | 无 |
-| theme | 主题 |  String | 否 | balanced |
+| text | label text | String | Yes | - |
+| value | value | Boolean | Yes | - |
+| theme | theme | String | No | balanced |
 
-## 弹出
+## Popover
 
-##### 组件：Vonic.Popover
+##### Component: Vonic.Popover
 
-##### 用法：
+##### Usage: 
 ```html
 <template>
   <div class="padding text-center">
@@ -204,73 +202,73 @@
     <button class="button button-positive" id="btn-top">show popover</button>
     
     <popover direction="top" target="#btn-top">
-      我在上面
+      I'm up here.
     </popover>
   </div>
 </template>
 ```
 
-##### 属性：
-| 属性名 | 描述 | 类型 | 必选 | 默认值 |
+##### Props: 
+| Name  | Description | Type | Required | Default |
 |-----|-----|-----|-----|-----|
-| direction | 出现方向 | String | 否 | top |
-| target | 挂载弹出的元素 |  String | 是 | 无 |
+| direction | show up direction | String | No | top |
+| target | element to show up from | String | Yes | - |
 
-## 计数器
+## Counter
 
-##### 组件：Vonic.Counter
+##### Component: Vonic.Counter
 
-##### 用法：
+##### Usage: 
 ```html
 <counter style="width: 200px;" :value.sync="cnt"></counter>
 ```
 
-##### 属性：
+##### Props: 
 
-| 属性名 | 描述 | 类型 | 必选 | 默认值 |
+| Name  | Description | Type | Required | Default |
 |-----|-----|-----|-----|-----|
-| value | 值 | Number | 是 | 无 |
-| min | 最小值 |  Number | 否 | 0 |
-| max | 最大值 |  Number | 否 | 100 |
-| theme | 主题 |  String | 否 | assertive |
+| value | value | Number | Yes | - |
+| min | minimum |  Number | No | 0 |
+| max | maximum |  Number | No | 100 |
+| theme | theme |  String | No | assertive |
 
-## 文字提示
+## Toast
 
-##### 服务：$toast
+##### Service: $toast
 
-##### 用法：
+##### Usage: 
 ```js
-/* 显示一个文字提示，3秒后关闭 */
-$toast.show('这是一个提示', 3000)
+/* show a toast and close in 3 seconds */
+$toast.show('This is a Toast', 3000)
 
-/* 显示一个文字提示，稍后手动关闭 */
-$toast.show('连接中..', 1E10)
+/* show a toast and close manully later */
+$toast.show('Connecting..', 1E10)
 
-/* 手动关闭 */
+/* close manully */
 $toast.hide()
 ```
 
-## 加载提示
+## Loading
 
-##### 服务：$loading
+##### Service: $loading
 
-##### 用法：
+##### Usage: 
 ```js
-/* 显示一个加载提示，稍后手动关闭 */
-$loading.show('拼命加载中..')
+/* show a loading and close manully later */
+$loading.show('Loading..')
 
-/* 手动关闭 */
+/* close manully */
 $loading.hide()
 ```
 
-## 列表布局
+## List
 
-##### 组件：Vonic.List、Vonic.Item、Vonic.HairlineItem
+##### Component: Vonic.List、Vonic.Item、Vonic.HairlineItem
 
-##### 用法：
-Vonic 在 ionic 丰富的列表类样式基础上，做了完备的1px方案。
+##### Usage: 
+Vonic provide a complete **1px** border solution, with ionic's rich list/item styles.
 
-你可以通过引入组件的方式来使用它们，如：
+use via components:
 
 ```html
 <template>
@@ -283,12 +281,20 @@ Vonic 在 ionic 丰富的列表类样式基础上，做了完备的1px方案。
         </div>
         <span class="icon ion-ios-arrow-right"></span>
       </item>
+
+      <hl-item class="item-icon-right">
+        文字
+        <div class="item-note">
+          备注
+        </div>
+        <span class="icon ion-ios-arrow-right"></span>
+      </hl-item>
     </list>
   </div>
 </template>
 ```
 
-也可以直接使用相关的 class 或 attribute，如：
+or use via classes/attributes:
 
 ```html
 <div class="list list-ios" thin-border>
@@ -301,13 +307,13 @@ Vonic 在 ionic 丰富的列表类样式基础上，做了完备的1px方案。
 </div>
 ```
 
-[查看更多列表布局例子](https://github.com/wangdahoo/vonic/blob/master/demo/components/List.vue)
+[For more examples](https://github.com/wangdahoo/vonic/blob/master/demo/components/List.vue)
 
-## 宫格布局
+## Cells
 
-##### 组件：Vonic.Cells
+##### Component: Vonic.Cells
 
-##### 用法：
+##### Usage: 
 ```html
 <template>
   <div>
@@ -330,21 +336,21 @@ Vonic 在 ionic 丰富的列表类样式基础上，做了完备的1px方案。
 </script>
 ```
 
-##### 属性：
+##### Props: 
 
-| 属性名 | 描述 | 类型 | 必选 | 默认值 |
+| Name  | Description | Type | Required | Default |
 |-----|-----|-----|-----|-----|
-| row | 行数 | Number | 否 | 3 |
-| col | 列数 |  Number | 否 | 3 |
-| items | 列表项 |  Array | 是 | 无 |
-| onCellClick | 宫格单元点击回调 |  Function | 否 | 无 |
-| outerBorder | 是否显示宫格容器外边框 | Boolean, String | 否 | true |
+| row | row number | Number | No | 3 |
+| col | column number |  Number | No | 3 |
+| items | items to fill in cells |  Array | Yes | - |
+| onCellClick | callback for `cell` click |  Function | No | - |
+| outerBorder | display outer border or not |  Boolean, String | No | true |
 
-## 选项卡
+## Tabs
 
-##### 组件：Vonic.Tabs
+##### Component: Vonic.Tabs
 
-##### 用法：
+##### Usage: 
 
 ```html
 <template>
@@ -380,24 +386,24 @@ Vonic 在 ionic 丰富的列表类样式基础上，做了完备的1px方案。
 </script>
 ```
 
-##### 属性：
+##### Props: 
 
-| 属性名 | 描述 | 类型 | 必选 | 默认值 |
+| Name  | Description | Type | Required | Default |
 |-----|-----|-----|-----|-----|
-| position | 位置，top/bottom | String | 否 | top |
-| bgColor | 背景色 | String | 否 | light |
-| tabColor | 前景色 | String | 否 | positive |
-| tabItems | 选项列表 | Array | 是 | 无 |
-| activeIndex | 激活选项索引 | Number | 是 | 无 |
-| onTabChanged | 选项卡点击回调 | Function | 否 | 无 |
+| position | top/bottom | String | No | top |
+| bgColor | background color | String | No | light |
+| tabColor | font color | String | No | positive |
+| tabItems | tab text list | Array | Yes | - |
+| activeIndex | active tab list | Number | Yes | - |
+| onTabChanged | callback for tab click | Function | No | - |
 
-> bgColor、tabColor 值均以 vonic 情景色表示。
+> use vonic scenario colors `assertive/positive..` for bgColor、tabColor.
 
-## iOS 风格选项卡
+## ButtonBar
 
-##### 组件：Vonic.ButtonBar
+##### Component: Vonic.ButtonBar
 
-##### 用法：
+##### Usage: 
 ```html
 <template>
   <div class="padding light-bg">
@@ -416,49 +422,49 @@ Vonic 在 ionic 丰富的列表类样式基础上，做了完备的1px方案。
 </script>
 ```
 
-##### 属性：
+##### Props: 
 
-| 属性名 | 描述 | 类型 | 必选 | 默认值 |
+| Name  | Description | Type | Required | Default |
 |-----|-----|-----|-----|-----|
-| tabItems | 选项列表 | Array | 是 | 无 |
-| activeIndex | 激活选项索引 | Number | 是 | 无 |
-| theme | 主题 | String | 否 | positive |
+| tabItems | tab text list | Array | Yes | - |
+| activeIndex | active tab index | Number | Yes | - |
+| theme | theme | String | No | positive |
 
 
-## 缩放布局
+## Scalable
 
-> 总有设计师拿着5，6像素大小的字跑来跟我说小而美。
+> "Small and Beatifull", but not my style.
 
-##### 组件：Vonic.Scalable
+##### Component: Vonic.Scalable
 
-##### 用法：
+##### Usage: 
 
 ```html
 <template>
   <div class="padding">
-    <!-- 设置宽为父容器宽度，高为100px -->
+    <!-- set width to 100% parent container width, height to 100px -->
     <scalable width="100%" height="100" style="background-color: #FFF;">
       <p>
-        Font Size = 16px (相当于8px)
+        Font Size = 16px (scale down to 8px)
       </p>
     </scalable>
   </div>
 </template>
 ```
 
-##### 属性：
+##### Props: 
 
-| 属性名 | 描述 | 类型 | 必选 | 默认值 |
+| Name  | Description | Type | Required | Default |
 |-----|-----|-----|-----|-----|
-| scale | 缩小比例 | Number | 否 | 2 |
-| width | 容器宽度 | String | 否 | 100% |
-| height | 容器高度 | String | 否 | 100% |
+| scale | scale rate | Number | No | 2 |
+| width | container width | String | No | 100% |
+| height | container height | String | No | 100% |
 
-## 轮播
+## Swiper
 
-##### 组件：Vonic.Swiper、Vonic.SwiperItem
+##### Component: Vonic.Swiper、Vonic.SwiperItem
 
-##### 用法：
+##### Usage: 
 ```html
 <template>
   <div>
@@ -479,31 +485,32 @@ Vonic 在 ionic 丰富的列表类样式基础上，做了完备的1px方案。
 </template>
 ```
 
-##### 属性：
+##### Props: 
 
-| 属性名 | 描述 | 类型 | 必选 | 默认值 |
+| Name  | Description | Type | Required | Default |
 |-----|-----|-----|-----|-----|
-| direction | vertical/horizontal | String | 否 | vertical |
-| width | 宽度 | String | 否 | 100% |
-| height | 高度 | String | 否 | 100% |
-| pagerColor | 导航颜色 | String | 否 | #333 |
+| direction | vertical/horizontal | String | No | vertical |
+| width | swiper container width | String | No | 100% |
+| height | swiper container height | String | No | 100% |
+| pagerColor | pager color | String | 否 | #333 |
+| pagerBgColor | pager background color | String | 否 | #333 |
 
-##### 方法：
+##### Methods：
 
 ###### Void go(index :Number) 
-> 跳转到某一页
+> go to page by index
 
 ###### Void next() 
-> 跳转到下一页
+> go to next page
 
 ###### Void prev() 
-> 跳转到上一页
+> go to previous page
 
-## 滚动
+## Scroll
 
-##### 组件：Vonic.Scroll
+##### Component: Vonic.Scroll
 
-##### 用法：
+##### Usage: 
 
 ```html
 <template>
@@ -567,112 +574,111 @@ Vonic 在 ionic 丰富的列表类样式基础上，做了完备的1px方案。
 </script>
 ```
 
-[查看线上例子](https://jsfiddle.net/wangdahoo/o72t05uk/)
+[Online demo here](https://jsfiddle.net/wangdahoo/o72t05uk/)
 
-##### 属性：
+##### Props: 
 
-| 属性名 | 描述 | 类型 | 必选 | 默认值 |
+| Name  | Description | Type | Required | Default |
 |-----|-----|-----|-----|-----|
-| onRefresh | 下拉刷新回调 | Function | 否 | 无 |
-| onInfinite | 无线加载回调 | Function | 否 | 无 |
+| onRefresh | callback on refresh | Function | No | - |
+| onInfinite | callback on infinite loading | Function | No | - |
 
 ## Vue Scroller
 
-##### 组件：Vonic.VueScroller
+##### Component: Vonic.VueScroller
 
-Vonic 整合了 [VueScroller](https://github.com/wangdahoo/vue-scroller)。关于 VueScroller 的用法及例子，请[查看这里](https://wangdahoo.github.io/vue-scroller/#!/index)。
+Vonic has integrated [VueScroller](https://github.com/wangdahoo/vue-scroller)。[For VueScroller usage and examples](https://wangdahoo.github.io/vue-scroller/#!/index)。
 
-## 级联
+## Cascade
 
-##### 组件：Vonic.Cascade
+##### Component: Vonic.Cascade
 
-##### 用法：[查看线上例子](https://jsfiddle.net/wangdahoo/ac5k5y31/)
+##### Usage: [Online demo here](https://jsfiddle.net/wangdahoo/ac5k5y31/)
 
-##### 属性：
+##### Props: 
 
-| 属性名 | 描述 | 类型 | 必选 | 默认值 |
+| Name  | Description | Type | Required | Default |
 |-----|-----|-----|-----|-----|
-| fields | 字段列表 | Array | 是 | 无 |
-| data | 数据（二维数组） | Array | 是 | 无 |
-| value | 值 | Array | 是 | 无 |
+| fields | field list | Array | Yes | - |
+| data | row data in arrays | Array | Yes | - |
+| value | value | Array | Yes | - |
 
-## 对话框
+## Dialog
 
-##### 服务：$dialog
+##### Service: $dialog
 
-##### 用法：
+##### Usage: 
 ```js
-/* Alert 警告框 */
+/* Alert */
 $dialog.alert({
-  // 效果
+  // transition effect
   effect: 'default',
-  // 标题
-  title: '提示', 
-  // 内容
-  content: '这是一个警告框',
-  // 按钮文本
-  okText: '确定',
-  // 按钮主题
+  // dialog title
+  title: 'Message', 
+  // dialog content
+  content: 'Not enough minerals',
+  // ok button text
+  okText: 'Ok',
+  // ok button theme
   okTheme: 'assertive'
 })
 
-/* Confirm 确认框 */
+/* Confirm */
 $dialog.confirm({
-  // 设置为ios样式
+  // show a ios style confirm dialog
   theme: 'ios',
-  // 标题
-  title: '在"微信"中打开链接吗?',
-  // 取消按钮文本
-  cancelText: '取消',
-  // 确定按钮文本
-  okText: '打开'
+  title: 'open this link in Wechat?',
+  // cancel button text
+  cancelText: 'No',
+  // ok button text
+  okText: 'Yes'
 }).then((res) => {
   console.log('confirm result: ', res)
 })
 ```
 
-[查看更多$dialog使用例子](https://github.com/wangdahoo/vonic/blob/master/demo/components/Popup.vue)
+[More $dialog examples](https://github.com/wangdahoo/vonic/blob/master/demo/components/Popup.vue)
 
-##### 方法：
+##### Methods:
 
 ###### Promise alert(options: Object)
 
-options 参数：
+options:
 
-| 字段名 | 描述 | 类型 | 必选 | 默认值 |
+| Option | Description | Type | Required | Default |
 |-----|-----|-----|-----|-----|
-| effect | 效果 default、scale、slide | String | 否 | default |
-| title | 标题 | String | 否 | 提示 |
-| content | 内容 | String | 否 | 无 |
-| okText | 按钮文本 | String | 否 | 确定 |
-| okTheme | 按钮主题 | String | 否 | assertive |
-| theme | 主题样式 default、ios | String | 否 | default |
+| effect | default/scale/slide | String | No | default |
+| title | dialog title | String | No | 提示 |
+| content | dialog content | String | No | - |
+| okText | button text | String | No | 确定 |
+| okTheme | button theme | String | No | assertive |
+| theme | default/ios | String | No | default |
 
-> 当 theme 值为 ios 时，其他主题相关的参数（okTheme, cancelTheme，effect等）将不再起作用。
+> If you choose `theme` as `ios`, other theme related options (such as `okTheme`, `effect` etc) will not work any more.
 
 ###### Promise confirm(options: Object)
 
-options 参数：
+options:
 
-| 字段名 | 描述 | 类型 | 必选 | 默认值 |
+| Option | Description | Type | Required | Default |
 |-----|-----|-----|-----|-----|
-| effect | 效果 default/scale/slide | String | 否 | default |
-| title | 标题 | String | 否 | 提示 |
-| content | 内容 | String | 否 | 无 |
-| okText | 确定按钮文本 | String | 否 | 确定 |
-| okTheme | 确定按钮主题 | String | 否 | assertive |
-| cancelText | 取消按钮文本 | String | 否 | 确定 |
-| cancelTheme | 取消按钮主题 | String | 否 | default |
-| theme | 主题样式 default、ios | String | 否 | default |
+| effect | default/scale/slide | String | No | default |
+| title | dialog title | String | No | 提示 |
+| content | dialog content | String | No | - |
+| okText | ok button text | String | - | 确定 |
+| okTheme | ok button theme | String | - | assertive |
+| cancelText | cancel button text | String | - | 确定 |
+| cancelTheme | cancel button theme | String | - | default |
+| theme | default/ios | String | - | default |
 
-> 当 theme 值为 ios 时，其他主题相关的参数（okTheme, cancelTheme，effect等）将不再起作用。
+> If you choose `theme` as `ios`, other theme related options (such as `okTheme`, `effect` etc) will not work any more.
 
 
-## 弹层
+## Popup
 
-##### 服务：$popup
+##### Service: $popup
 
-##### 用法：
+##### Usage: 
 
 ```js
 let options = {
@@ -691,64 +697,64 @@ popup.show().then((buttonIndex) => {
 })
 ```
 
-##### 方法：
+##### Methods:
 
 ###### Popup fromTemplate(template: String, options: Object) 
 
-> 按模板字符串创建弹层实例
+> create popup instance vie template string.
 
-template：自定义popup模板字符串
+template: template string
 
-options 参数：
+options:
 
-| 字段名 | 描述 | 类型 | 必选 | 默认值 |
+| Option | Description | Type | Required | Default |
 |-----|-----|-----|-----|-----|
-| effect | 效果 default/scale/slide | String | 否 | default |
-| title | 标题 | String | 否 | 无 |
-| cssClass | 自定义样式类 | String | 否 | 无 |
-| buttons | 按钮定义 | Array | 否 | 无 |
+| effect | default/scale/slide | String | No | default |
+| title | popup title | String | No | - |
+| cssClass | custom css class | String | No | - |
+| buttons | button definitions | Array | No | - |
 
 ##### Popup 实例方法：
 
 ###### Promise show() 
-> 显示弹层
+> show popup
 
 ###### Void hide() 
-> 关闭弹层
+> hide popup
 
-## 模态窗
+## Modal
 
-##### 服务：$vonicModal
+##### Service: $vonicModal
 
-##### 用法：[参考官方范例](https://github.com/wangdahoo/vonic/blob/master/demo/components/Modal.vue)
+##### Usage: [Checkout offical demo](https://github.com/wangdahoo/vonic/blob/master/demo/components/Modal.vue)
 
-##### 方法：
+##### Methods:
 
-###### Void fromComponent(modalRef: String, modalComponent: Object)
+###### Void fromComponent(modalRef: String, modalComponent:  Object)
 
-> 注册模态窗
+> initiate a modal instance by a custom component.
 
 ###### Void show(modalRef: String)
 
-> 显示模态窗
+> show modal
 
 ###### Void hide(modalRef: String)
 
-> 关闭模态窗
+> hide modal
 
 ##### Void destroy()
 
-> 销毁所有模态窗实例
+> destroy all modal instances
 
 ## ActionSheet
 
-##### 服务：$actionSheet
+##### Service: $actionSheet
 
-##### 用法：
+##### Usage: 
 
 ```js
 $actionSheet.show({
-  // 支持三种主题样式 ios/android/weixin
+  // total 3 styles for actionsheet, ios/android/weixin
   theme: 'weixin',
   title: '标题',
   buttons: {
@@ -763,11 +769,11 @@ $actionSheet.show({
 })
 ```
 
-## 侧边栏
+## Sidebar
 
-##### 服务：$sidebar
+##### Service: $sidebar
 
-##### 用法：
+##### Usage: 
 ```js
 let template = `
   <p style="font-size: 14; line-height: 18px;">
@@ -781,31 +787,36 @@ let sidebar = $sidebar.fromTemplate(template, {position: 'left'})
 sidebar.open()
 ```
 
-##### 方法：
+##### Methods:
 
 ###### Sidebar fromTemplate(template: String, options: Object)
-> 按模板字符串创建侧边栏实例
+
+> create sidebar instance via template string.
 
 ###### Sidebar fromTemplateUrl(templateUrl: String, options: Object)
-> 按远程模板地址返回的模板字符串创建侧边栏实例
 
-##### 侧边栏实例方法：
+> create sidebar instance via a url which response back a template string.
+
+##### Methods of a sidebar instance：
 
 ###### Void toggle()
-> 切换
+
+> toggle sidebar
 
 ###### Void open()
-> 打开
+
+> open sidebar
 
 ###### Void close()
-> 关闭
+
+> close sidebar
 
 
 ## Tabbar
 
-##### 指令：v-tabbar
+##### Directive: v-tabbar
 
-##### 用法：
+##### Usage: 
 
 ```html
 <template>
@@ -859,60 +870,61 @@ sidebar.open()
 </script>
 ```
 
-对应的嵌套路由配置：
+routes configuration: 
 
 ```js
   // other routes
   '/advanced/tabbar': {
-    component: TabBar,
+    Component:  TabBar,
     subRoutes: {
       '/home': {
-        component: TabBarHome
+        Component:  TabBarHome
       },
       '/discount': {
-        component: TabBarDiscount
+        Component:  TabBarDiscount
       },
       '/cart': {
-        component: TabBarCart
+        Component:  TabBarCart
       },
       '/user': {
-        component: TabBarUser
+        Component:  TabBarUser
       }
     }
   },
   // other routes
 ```
 
-##### 参数：
-| 参数名 | 描述 | 类型 | 必选 | 默认值 |
+##### Parameters:
+
+| Parameter | Description | Type | Required | Default |
 |-----|-----|-----|-----|-----|
-| menus | 菜单项列表 | Array | 是 | 无 |
-| menuColor | 菜单字体颜色 | String | 否 | #888 |
-| activeMenuColor | 激活菜单字体颜色 | String | 否 | #EA5A49 |
-| onMenuClick | 菜单点击回调 | Function | 否 | #EA5A49 |
+| menus | menu list | Array | Yes | - |
+| menuColor | menu font color | String | No | #888 |
+| activeMenuColor | active menu font color | String | No | #EA5A49 |
+| onMenuClick | callback for menu click | Function | No | #EA5A49 |
 
-## 本地存储
+## Storage
 
-##### 服务：$storage
+#####  Service: $storage
 
-> Vonic 对 localStorage 的简易封装
+> Encapsulation of localStorage
 
-##### 方法：
+##### Methods:
 
 ###### Void set(key: String, value: Object)
-> 保存
+> save key and value
 
 ###### Void get(key: String)
-> 读取
+> read by key
 
 ###### Void remove(key: String)
-> 清除
+> remove by key
 
 ###### Void clear()
-> 清除全部
+> remove all
 
 ###### Void on(key: String, callback: Function)
-> 监听
+> listen on key
 
 ###### Void off(key: String, callback: Function)
-> 去除监听
+> listen off
