@@ -583,11 +583,11 @@ or use via classes/attributes:
 | onRefresh | callback on refresh | Function | No | - |
 | onInfinite | callback on infinite loading | Function | No | - |
 
-## Vue Scroller
+## Scroller
 
 ##### Component: Vonic.VueScroller
 
-Vonic has integrated [VueScroller](https://github.com/wangdahoo/vue-scroller)。[For VueScroller usage and examples](https://wangdahoo.github.io/vue-scroller/#!/index)。
+Vonic has integrated [vue-scroller](https://github.com/wangdahoo/vue-scroller). For vue-scroller [usage and examples](https://wangdahoo.github.io/vue-scroller/#!/index)
 
 ## Cascade
 
@@ -600,8 +600,10 @@ Vonic has integrated [VueScroller](https://github.com/wangdahoo/vue-scroller)。
 | Name  | Description | Type | Required | Default |
 |-----|-----|-----|-----|-----|
 | fields | field list | Array | Yes | - |
-| data | row data in arrays | Array | Yes | - |
+| data | raw data in arrays | Array | No | - |
 | value | value | Array | Yes | - |
+| ajaxUrl | url for ajax raw data | Array | No | 无 |
+| ajaxData | field of ajax raw data | String | No | 无 |
 
 ## Dialog
 
@@ -701,7 +703,7 @@ popup.show().then((buttonIndex) => {
 
 ###### Popup fromTemplate(template: String, options: Object) 
 
-> create popup instance vie template string.
+> create popup instance via template string.
 
 template: template string
 
@@ -714,7 +716,17 @@ options:
 | cssClass | custom css class | String | No | - |
 | buttons | button definitions | Array | No | - |
 
-##### Popup 实例方法：
+###### Popup fromTemplateUrl(templateUrl: String, options: Object) 
+
+> create popup instance via templateUrl who will response back a template string.
+
+templateUrl: url who will response back a template string.
+
+options:
+
+as above.
+
+##### Methods of popup instance：
 
 ###### Promise show() 
 > show popup

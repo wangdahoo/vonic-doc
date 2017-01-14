@@ -593,8 +593,10 @@ Vonic 整合了 [VueScroller](https://github.com/wangdahoo/vue-scroller)。关�
 | 属性名 | 描述 | 类型 | 必选 | 默认值 |
 |-----|-----|-----|-----|-----|
 | fields | 字段列表 | Array | 是 | 无 |
-| data | 数据（二维数组） | Array | 是 | 无 |
+| data | 数据（二维数组） | Array | 否 | 无 |
 | value | 值 | Array | 是 | 无 |
+| ajaxUrl | 返回数据的url | Array | 否 | 无 |
+| ajaxData | url返回数据对应的字段 | String | 否 | 无 |
 
 ## 对话框
 
@@ -707,6 +709,16 @@ options 参数：
 | title | 标题 | String | 否 | 无 |
 | cssClass | 自定义样式类 | String | 否 | 无 |
 | buttons | 按钮定义 | Array | 否 | 无 |
+
+###### Popup fromTemplateUrl(templateUrl: String, options: Object) 
+
+> 通过ajax按templateUrl返回模板字符串创建弹层实例
+
+templateUrl：返回模板字符串的url
+
+options 参数：
+
+同上
 
 ##### Popup 实例方法：
 

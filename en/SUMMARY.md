@@ -26,7 +26,7 @@
   * [List](05_API.md#list)
   * [Cells](05_API.md#cells)
   * [Tabs](05_API.md#tabs)
-  * [ButtonBar](05_API.md#button-bar)
+  * [ButtonBar](05_API.md#buttonbar)
   * [Scalable](05_API.md#scalable)
   * [Swiper](05_API.md#swiper)
   * [Scroll](05_API.md#scroll)
