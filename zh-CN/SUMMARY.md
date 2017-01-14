@@ -10,7 +10,7 @@
 
 * [组件与服务](03_components_and_services.md)
 
-* [页面和导航](04_page_and_nav.md)
+* [页面、导航及路由](04_page_nav_and_router.md)
 
 * [API](05_API.md)
   * [Material Design Button](05_API.md#material-design-button)
