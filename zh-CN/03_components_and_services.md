@@ -1,13 +1,13 @@
-# 如何使用 Vonic 组件
+# 组件与服务
 
-在 Vonic 中，一部分组件需要在创建 Vue 实例时，在 components 属性中进行引入才能使用；另一部分则在 vonic.js 加载后自动注册为全局服务，可直接调用。
+**Vonic** 加载完毕后，大部分组件都已通过`Vue.component`方法注册为全局组件，可以直接使用；除此以外，还有小部分组件以服务提供者的形式提供服务，如：**$toast**、**$dialog** 等。
 
-下面以 MdButton 和 $toast 两类组件为例进行说明：
+下面以 MdButton、$toast 为例进行说明：
 
 ```html
 <template>
-  <div class="page">
-    <div class="page-content">
+  <div class="page has-navbar" v-nav="{'title': '组件和服务'}">
+    <div class="page-content padding padding-top">
       <md-button class="button button-assertive button-block">
         just a button
       </md-button>
@@ -19,11 +19,7 @@
   </div>
 </template>
 <script>
-  import {MdButton} from 'vonic'
   export default {
-    components: {
-      MdButton
-    },
     methods: {
       onClick() {
         $toast.show("button clicked.")

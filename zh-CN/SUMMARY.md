@@ -8,7 +8,7 @@
   * [颜色](02_basic.md#颜色)
   * [图标](02_basic.md#图标)
 
-* [如何使用 Vonic 组件](03_how-to-use-vonic-components.md)
+* [组件与服务](03_components_and_services.md)
 
 * [页面和导航](04_page_and_nav.md)
 
