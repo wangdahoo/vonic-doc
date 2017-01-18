@@ -9,11 +9,11 @@ Vonic has several dependencies, make sure you have introduced them before your a
 
 ## CDN
 You can access to the latest versions of the resources via [unpkg/vonic](https://unpkg.com/vonic)
-> current stable version is **v1.1.1**
+> current stable version is **v1.1.2**
 
 ```html
 <!-- ionic stylesheet -->
-<link rel="stylesheet" href="https://unpkg.com/vonic@1.1.1/dist/ionic/css/ionic.css">
+<link rel="stylesheet" href="https://unpkg.com/vonic@1.1.2/dist/ionic/css/ionic.css">
 <!-- axios, vue & vue-router -->
 <script src="https://unpkg.com/axios@0.15.3/dist/axios.min.js"></script>
 <script src="https://unpkg.com/vue@1.0.28/dist/vue.min.js"></script>
