@@ -17,3 +17,6 @@ _book
 
 # Mac
 .DS_Store
+
+# doc site
+docs/

@@ -1,0 +1,12 @@
+{
+  "name": "vonic-doc",
+  "version": "1.0.0",
+  "description": "vonic documents",
+  "author": "157195705@qq.com",
+  "main": "gulpfile.js",
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-replace": "^0.5.4"
+  }
+}
