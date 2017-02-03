@@ -18,4 +18,4 @@ cd docs
 git init
 git add -A
 git commit -m 'update doc'
-git push https://github.com/wangdahoo/vonic-doc.git gh-pages -f
+git push https://github.com/wangdahoo/vonic-doc.git master:gh-pages -f
