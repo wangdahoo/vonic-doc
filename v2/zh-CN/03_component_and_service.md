@@ -6,13 +6,13 @@
 
 ```html
 <template>
-  <div class="page has-navbar" v-nav="{'title': '组件和服务'}">
+  <div class="page has-navbar" v-nav="{'title': 'Component and Service'}">
     <div class="page-content padding padding-top">
       <md-button class="button button-assertive button-block">
         just a button
       </md-button>
 
-      <md-button class="button button-balanced button-block" @click="onClick()">
+      <md-button class="button button-balanced button-block" @click.native="onClick()">
         show toast
       </md-button>
     </div>
@@ -29,4 +29,13 @@
 </script>
 ```
 
-> [查看在线范例](https://jsfiddle.net/wangdahoo/wee3kwnk/)
+运行效果如下：
+
+<style>
+  .device-ios { width: 467px; height: 800px; background: url(img/devices-sprite.jpg) center top no-repeat; background-size: 467px; margin: 0 auto; text-align: center; }
+  .demo-ios { margin-top: 85px; width: 320px; height: 568px; }
+</style>
+
+<div class="device-ios">
+  <iframe class="demo-ios" src="https://wangdahoo.github.io/vonic-doc-examples/#/componentAndService" frameborder="0"></iframe>
+</div>

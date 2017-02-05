@@ -9,22 +9,23 @@ Vonic 有以下几个依赖库，在开始写你极（diao）其（de）美（yi
 
 ## CDN
 通过 [unpkg/vonic](https://unpkg.com/vonic) 你可以快速获取最新的相关资源文件（含ionic样式）。
-> 当前稳定版本为 **v1.1.2**
+> 最新版本为 **v2.0.0-alpha.6**
 
 ```html
 <!-- ionic stylesheet -->
-<link rel="stylesheet" href="https://unpkg.com/vonic@1.1.2/dist/ionic/css/ionic.css">
+<link rel="stylesheet" href="https://unpkg.com/vonic@2.0.0-alpha.6/dist/ionic/css/ionic.css">
+
 <!-- axios, vue & vue-router -->
 <script src="https://unpkg.com/axios@0.15.3/dist/axios.min.js"></script>
-<script src="https://unpkg.com/vue@1.0.28/dist/vue.min.js"></script>
-<script src="https://unpkg.com/vue-router@0.7.13/dist/vue-router.min.js"></script>
+<script src="https://unpkg.com/vue@2.1.10/dist/vue.min.js"></script>
+<script src="https://unpkg.com/vue-router@2.2.0/dist/vue-router.min.js"></script>
 
 <!-- and then, vonic core -->
-<link rel="stylesheet" href="https://unpkg.com/vonic@1.1.1/dist/vonic.min.js">
+<link rel="stylesheet" href="https://unpkg.com/vonic@2.0.0-alpha.6/dist/vonic.min.js">
 ```
 
 ## Hello World
-好了，是时候整一个 Hello World 了。[查看在线范例](https://jsfiddle.net/wangdahoo/x2wf0x4j/).
+好了，是时候整一个 Hello World 了。[查看在线范例](https://jsfiddle.net/wangdahoo/c15mgqz8/).
 
 前面讲过，Vonic 是一个用来做单页应用的UI框架。所以，我们这里谈论的 Hello World 不是一个单个的页面，而是一个单页应用骨架。
 
@@ -43,16 +44,18 @@ const Index = {
   template: `
     <div class="page has-navbar" v-nav="{ title: 'Home' }">
       <div class="page-content text-center">
-        <p class="padding" v-text="msg"></p>
-        
-        <md-button class="button button-assertive" v-link="{ path: '/about' }">
-        	<i class="ion-information-circled"></i> About
-        </md-button>
+        <h2 class="padding" v-text="msg"></h2>
+
+        <router-link class="button button-assertive" to="/about">
+          <i class="ion-information-circled"></i> About
+        </router-link>
       </div>
     </div>
   `,
   data() {
-    return { msg: 'Hello, World!' }
+  	return {
+	    msg: 'Hello! Vonic.'  
+    }
   }
 }
 
@@ -60,7 +63,7 @@ const About = {
   template: `
     <div class="page has-navbar" v-nav="{ title: 'About', showBackButton: true }">
       <div class="page-content text-center">
-        <p class="padding">Nothing Here.</p>
+        <h2 class="padding">Nothing here.</h2>
       </div>
     </div>
   `
@@ -70,23 +73,17 @@ const About = {
 3.定义路由
 
 ```js
-const routes = {
-  '/': {
-    component: Index
-  },
-
-  '/about': {
-    component: About
-  }
-}
+const routes = [
+  { path: '/', component: Index },
+  { path: '/about', component: About }
+]
 ```
 
 4.以添加Vue插件的方式启动你的应用
 
 ```js
 Vue.use(Vonic.app, {
-  routes: routes,
-  defaultRouterUrl: '/'
+  routes: routes
 })
 ```
 

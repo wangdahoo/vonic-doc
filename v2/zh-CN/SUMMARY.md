@@ -8,7 +8,7 @@
   * [颜色](02_basic.md#颜色)
   * [图标](02_basic.md#图标)
 
-* [组件与服务](03_components_and_services.md)
+* [组件与服务](03_component_and_service.md)
 
 * [页面、导航及路由](04_page_nav_and_router.md)
 
