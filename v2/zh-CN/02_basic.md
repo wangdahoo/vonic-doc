@@ -48,7 +48,7 @@ Vonic 提供以下几种场景色：
   </div>
 
   <div class="color" style="background: #F5F5F5; color: #444; width: 200px; line-height: 20px; border-radius: 2px; padding: 10px; margin: 5px 10px 5px 0">
-    Stable <span style="font-size: 13px; color: #484746; float: right; margin-top: 1px;">#484746</span>
+    Stable <span style="font-size: 13px; color: #484746; float: right; margin-top: 1px;">#F5F5F5</span>
   </div>
 
   <div class="color" style="background: #FFF; color: #484746; width: 200px; line-height: 20px; border-radius: 2px; padding: 10px; margin: 5px 10px 5px 0">

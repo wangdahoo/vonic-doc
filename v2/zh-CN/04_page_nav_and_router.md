@@ -52,4 +52,4 @@ menuButtonText 默认值为：
 
 Vonic.app 启动后，即注册 VueRouter 实例为 $router 服务。除了可以使用 Router 实例本身自带的方法外，新增 forward 方法和 back 方法。
 
-这两个方法其实也是通过调用 router.go 方法来进行路由引导，只是调用 go 方法前会先定义页面的切换方向。
+这两个方法其实也是通过调用 router.push() 方法来进行路由引导，只是调用 push 方法前会先定义页面的切换方向。

@@ -34,7 +34,7 @@ Vonic 有以下几个依赖库，在开始写你极（diao）其（de）美（yi
 1.应用挂载点
 
 ```html
-  <von-app></von-app>
+<von-app></von-app>
 ```
 
 2.写两个页面级组件
@@ -88,3 +88,14 @@ Vue.use(Vonic.app, {
 ```
 
 没错，就这么简单。
+
+运行效果如下：
+
+<style>
+  .device-ios { width: 467px; height: 800px; background: url(img/devices-sprite.jpg) center top no-repeat; background-size: 467px; margin: 0 auto; text-align: center; }
+  .demo-ios { margin-top: 85px; width: 320px; height: 568px; }
+</style>
+
+<div class="device-ios">
+  <iframe class="demo-ios" src="https://wangdahoo.github.io/vonic-doc-examples/getting_started.html" frameborder="0"></iframe>
+</div>
