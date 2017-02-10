@@ -10,16 +10,28 @@ gulp.task('doc_index', function() {
     .pipe(gulp.dest('docs/'));
 });
 
-gulp.task('zh_index', function() {
-  gulp.src('docs/zh-CN/index.html')
+gulp.task('zh', function() {
+  gulp
+    .src([
+      'docs/zh-CN/*.html',
+      'docs/zh-CN/**/*.html'
+    ])
     .pipe(replace(
       '輸入並搜尋', 
       '输入并搜索'
     ))
-    .pipe(gulp.dest('docs/'));
+    .pipe(replace(
+      '本書使用 GitBook 釋出', 
+      'vonic 2.0'
+    ))
+    .pipe(replace(
+      'href="https://www.gitbook.com', 
+      'href="https://github.com/wangdahoo/vonic'
+    ))
+    .pipe(gulp.dest('docs/zh-CN/'));
 });
 
-gulp.task('default', ['doc_index', 'zh_index'], function (cb) {
+gulp.task('default', ['doc_index', 'zh'], function (cb) {
   console.log('process static files ok.');
   cb();
 })
