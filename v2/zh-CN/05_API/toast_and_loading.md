@@ -1,5 +1,7 @@
 ## 提示
 
+##### 服务：$toast，$loading
+
 ##### 示例：
 
 <style>
@@ -10,10 +12,6 @@
 <div class="device-ios">
   <iframe class="demo-ios" src="https://wangdahoo.github.io/vonic-doc-examples/#/toastAndLoading" frameborder="0"></iframe>
 </div>
-
-### 文字提示
-
-##### 服务：$toast
 
 ##### 用法：
 
@@ -28,17 +26,8 @@ $toast.show('连接中..', 1E10)
 
 /* 手动关闭 */
 $toast.hide()
-```
 
-### 加载提示
-
-##### 服务：$loading
-
-##### 用法：
-
-```js
 /* 显示一个加载提示，稍后手动关闭 */
-
 $loading.show('拼命加载中..').then(() => {
   console.log('loading showed')
 
