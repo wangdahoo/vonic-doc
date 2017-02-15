@@ -9,11 +9,11 @@ Vonic 有以下几个依赖库，在开始写你极（diao）其（de）美（yi
 
 ## CDN
 通过 [unpkg/vonic](https://unpkg.com/vonic) 你可以快速获取最新的相关资源文件（含ionic样式）。
-> 最新版本为 **v2.0.0-alpha.6**
+> 最新版本为 **v2.0.0-alpha.13**
 
 ```html
 <!-- ionic stylesheet -->
-<link rel="stylesheet" href="https://unpkg.com/vonic@2.0.0-alpha.6/dist/ionic/css/ionic.css">
+<link rel="stylesheet" href="https://unpkg.com/vonic@2.0.0-alpha.9/dist/ionic/css/ionic.css">
 
 <!-- axios, vue & vue-router -->
 <script src="https://unpkg.com/axios@0.15.3/dist/axios.min.js"></script>
@@ -21,7 +21,7 @@ Vonic 有以下几个依赖库，在开始写你极（diao）其（de）美（yi
 <script src="https://unpkg.com/vue-router@2.2.0/dist/vue-router.min.js"></script>
 
 <!-- and then, vonic core -->
-<link rel="stylesheet" href="https://unpkg.com/vonic@2.0.0-alpha.6/dist/vonic.min.js">
+<script src="https://unpkg.com/vonic@2.0.0-alpha.13/dist/vonic.min.js"></script>
 ```
 
 ## Hello World
