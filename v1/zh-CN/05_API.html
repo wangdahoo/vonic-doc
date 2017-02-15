@@ -1,0 +1,2115 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-CN" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>API · Vonic Documents</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="05_API.html" />
+    
+    
+    <link rel="prev" href="04_page_nav_and_router.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01_getting_started.html">
+            
+                <a href="01_getting_started.html">
+            
+                    
+                    起步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="02_basic.html">
+            
+                <a href="02_basic.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="02_basic.html">
+            
+                <a href="02_basic.html#字体">
+            
+                    
+                    字体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="02_basic.html">
+            
+                <a href="02_basic.html#颜色">
+            
+                    
+                    颜色
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="02_basic.html">
+            
+                <a href="02_basic.html#图标">
+            
+                    
+                    图标
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="03_components_and_services.html">
+            
+                <a href="03_components_and_services.html">
+            
+                    
+                    组件与服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="04_page_nav_and_router.html">
+            
+                <a href="04_page_nav_and_router.html">
+            
+                    
+                    页面、导航及路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="05_API.html">
+            
+                <a href="05_API.html">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="05_API.html">
+            
+                <a href="05_API.html#material-design-button">
+            
+                    
+                    Material Design Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="05_API.html">
+            
+                <a href="05_API.html#输入框">
+            
+                    
+                    输入框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="05_API.html">
+            
+                <a href="05_API.html#搜索框">
+            
+                    
+                    搜索框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="05_API.html">
+            
+                <a href="05_API.html#单选框">
+            
+                    
+                    单选框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="05_API.html">
+            
+                <a href="05_API.html#多选框">
+            
+                    
+                    多选框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="05_API.html">
+            
+                <a href="05_API.html#开关按钮">
+            
+                    
+                    开关按钮
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="05_API.html">
+            
+                <a href="05_API.html#弹出">
+            
+                    
+                    弹出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="05_API.html">
+            
+                <a href="05_API.html#计数器">
+            
+                    
+                    计数器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="05_API.html">
+            
+                <a href="05_API.html#文字提示">
+            
+                    
+                    文字提示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="05_API.html">
+            
+                <a href="05_API.html#加载提示">
+            
+                    
+                    加载提示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="05_API.html">
+            
+                <a href="05_API.html#列表布局">
+            
+                    
+                    列表布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="05_API.html">
+            
+                <a href="05_API.html#宫格布局">
+            
+                    
+                    宫格布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="05_API.html">
+            
+                <a href="05_API.html#选项卡">
+            
+                    
+                    选项卡
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="05_API.html">
+            
+                <a href="05_API.html#ios-风格选项卡">
+            
+                    
+                    iOS风格选项卡
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="05_API.html">
+            
+                <a href="05_API.html#缩放布局">
+            
+                    
+                    缩放布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="05_API.html">
+            
+                <a href="05_API.html#轮播">
+            
+                    
+                    轮播
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="05_API.html">
+            
+                <a href="05_API.html#滚动">
+            
+                    
+                    滚动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18" data-path="05_API.html">
+            
+                <a href="05_API.html#vue-scroller">
+            
+                    
+                    Vue Scroller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.19" data-path="05_API.html">
+            
+                <a href="05_API.html#级联">
+            
+                    
+                    级联
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.20" data-path="05_API.html">
+            
+                <a href="05_API.html#对话框">
+            
+                    
+                    对话框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.21" data-path="05_API.html">
+            
+                <a href="05_API.html#弹层">
+            
+                    
+                    弹层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22" data-path="05_API.html">
+            
+                <a href="05_API.html#模态窗">
+            
+                    
+                    模态窗
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.23" data-path="05_API.html">
+            
+                <a href="05_API.html#actionsheet">
+            
+                    
+                    ActionSheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.24" data-path="05_API.html">
+            
+                <a href="05_API.html#侧边栏">
+            
+                    
+                    侧边栏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.25" data-path="05_API.html">
+            
+                <a href="05_API.html#tabbar">
+            
+                    
+                    Tabbar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.26" data-path="05_API.html">
+            
+                <a href="05_API.html#本地存储">
+            
+                    
+                    本地存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="api">API</h1>
+<p>&#x9664;&#x4E86;&#x67E5;&#x9605;API&#x4EE5;&#x5916;&#xFF0C;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x67E5;&#x770B;<a href="https://github.com/wangdahoo/vonic/tree/master/demo" target="_blank">&#x8FD9;&#x91CC;</a>&#x3002;</p>
+<h2 id="material-design-button">Material Design Button</h2>
+<h5 id="&#x7EC4;&#x4EF6;&#xFF1A;vonicmdbutton">&#x7EC4;&#x4EF6;&#xFF1A;Vonic.MdButton</h5>
+<h5 id="&#x7528;&#x6CD5;&#xFF1A;">&#x7528;&#x6CD5;&#xFF1A;</h5>
+<pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">md-button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button button-positive&quot;</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;clicked()&quot;</span>&gt;</span>
+    Click Me
+  <span class="hljs-tag">&lt;/<span class="hljs-name">md-button</span>&gt;</span>
+</code></pre>
+<h2 id="&#x8F93;&#x5165;&#x6846;">&#x8F93;&#x5165;&#x6846;</h2>
+<h5 id="&#x7EC4;&#x4EF6;&#xFF1A;vonicvoninput">&#x7EC4;&#x4EF6;&#xFF1A;Vonic.VonInput</h5>
+<h5 id="&#x7528;&#x6CD5;&#xFF1A;">&#x7528;&#x6CD5;&#xFF1A;</h5>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">von-input</span> 
+  <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> 
+  <span class="hljs-attr">:value.sync</span>=<span class="hljs-string">&quot;username&quot;</span> 
+  <span class="hljs-attr">label</span>=<span class="hljs-string">&quot;&#x7528;&#x6237;&#x540D;&quot;</span>
+  <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;&#x7528;&#x6237;&#x540D;/&#x624B;&#x673A;/&#x90AE;&#x7BB1;&quot;</span> 
+&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">von-input</span>&gt;</span>
+</code></pre>
+<h5 id="&#x5C5E;&#x6027;&#xFF1A;">&#x5C5E;&#x6027;&#xFF1A;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5FC5;&#x9009;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>&#x7C7B;&#x578B;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>text</td>
+</tr>
+<tr>
+<td>label</td>
+<td>&#x6807;&#x7B7E;&#x6587;&#x5B57;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>-</td>
+</tr>
+<tr>
+<td>value</td>
+<td>&#x503C;</td>
+<td>String&#x3001;Number</td>
+<td>&#x662F;</td>
+<td>-</td>
+</tr>
+<tr>
+<td>placeholder</td>
+<td>&#x5360;&#x4F4D;&#x7B26;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>-</td>
+</tr>
+<tr>
+<td>floatingLabel</td>
+<td>&#x5F00;&#x542F;&#x60AC;&#x6D6E;&#x6807;&#x7B7E;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>&#x6CE8;&#xFF1A;VonInput &#x7684; type &#x5C5E;&#x6027;&#x53EA;&#x652F;&#x6301; text/password/email/tel &#x56DB;&#x79CD;&#x3002;</p>
+</blockquote>
+<h2 id="&#x641C;&#x7D22;&#x6846;">&#x641C;&#x7D22;&#x6846;</h2>
+<h5 id="&#x7EC4;&#x4EF6;&#xFF1A;vonicsearch">&#x7EC4;&#x4EF6;&#xFF1A;Vonic.Search</h5>
+<h5 id="&#x7528;&#x6CD5;&#xFF1A;">&#x7528;&#x6CD5;&#xFF1A;</h5>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">search</span> 
+      <span class="hljs-attr">:value.sync</span>=<span class="hljs-string">&quot;keywords&quot;</span> 
+      <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;&#x8F93;&#x5165;&#x5173;&#x952E;&#x5B57;&quot;</span> 
+      <span class="hljs-attr">:on-search</span>=<span class="hljs-string">&quot;onSearch&quot;</span> 
+      <span class="hljs-attr">:clear-search</span>=<span class="hljs-string">&quot;clearSearch&quot;</span>
+    &gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">search</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item&quot;</span> <span class="hljs-attr">v-show</span>=<span class="hljs-string">&quot;searching&quot;</span>&gt;</span>
+      searching for &apos;{{keywords}}&apos;.
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span>{
+    data(){
+      <span class="hljs-keyword">return</span> {
+        keywords: <span class="hljs-string">&apos;&apos;</span>,
+        searching: <span class="hljs-literal">false</span>
+      }
+    },
+    methods: {
+      onSearch(keywords) {
+        <span class="hljs-keyword">this</span>.searching = <span class="hljs-literal">true</span>;
+      },
+      clearSearch() {
+        <span class="hljs-keyword">this</span>.searching = <span class="hljs-literal">false</span>;
+        <span class="hljs-keyword">this</span>.keywords = <span class="hljs-string">&apos;&apos;</span>
+      }
+    }
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<h5 id="&#x5C5E;&#x6027;&#xFF1A;">&#x5C5E;&#x6027;&#xFF1A;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5FC5;&#x9009;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>value</td>
+<td>&#x503C;</td>
+<td>String</td>
+<td>&#x662F;</td>
+<td>&#x65E0;</td>
+</tr>
+<tr>
+<td>placeholder</td>
+<td>&#x5360;&#x4F4D;&#x7B26;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>Search</td>
+</tr>
+<tr>
+<td>cancelText</td>
+<td>&#x53D6;&#x6D88;&#x6309;&#x94AE;&#x6587;&#x6848;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x53D6;&#x6D88;</td>
+</tr>
+<tr>
+<td>onSearch</td>
+<td>&#x70B9;&#x51FB;&#x641C;&#x7D22;&#x56DE;&#x8C03;&#x51FD;&#x6570;</td>
+<td>Function</td>
+<td>&#x5426;</td>
+<td>&#x65E0;</td>
+</tr>
+<tr>
+<td>clearSearch</td>
+<td>&#x6E05;&#x9664;&#x641C;&#x7D22;&#x56DE;&#x8C03;&#x51FD;&#x6570;</td>
+<td>Function</td>
+<td>&#x5426;</td>
+<td>&#x65E0;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x5355;&#x9009;&#x6846;">&#x5355;&#x9009;&#x6846;</h2>
+<h5 id="&#x7EC4;&#x4EF6;&#xFF1A;vonicvonradio">&#x7EC4;&#x4EF6;&#xFF1A;Vonic.VonRadio</h5>
+<h5 id="&#x7528;&#x6CD5;&#xFF1A;">&#x7528;&#x6CD5;&#xFF1A;</h5>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item item-divider&quot;</span>&gt;</span>
+      &#x9009;&#x62E9;&#x6027;&#x522B;:
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">von-radio</span> <span class="hljs-attr">:options</span>=<span class="hljs-string">&quot;genderOptions&quot;</span> <span class="hljs-attr">:value.sync</span>=<span class="hljs-string">&quot;gender&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">von-radio</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+    data(){
+      <span class="hljs-keyword">return</span> {
+        gender: <span class="hljs-number">0</span>,
+        genderOptions: [<span class="hljs-string">&quot;&#x7537;&quot;</span>, <span class="hljs-string">&quot;&#x5973;&quot;</span>]
+      }
+    }
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<h5 id="&#x5C5E;&#x6027;&#xFF1A;">&#x5C5E;&#x6027;&#xFF1A;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5FC5;&#x9009;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>options</td>
+<td>&#x9009;&#x9879;&#x5217;&#x8868;</td>
+<td>Array</td>
+<td>&#x662F;</td>
+<td>&#x65E0;</td>
+</tr>
+<tr>
+<td>value</td>
+<td>&#x503C;</td>
+<td>Number</td>
+<td>&#x662F;</td>
+<td>&#x65E0;</td>
+</tr>
+<tr>
+<td>theme</td>
+<td>&#x4E3B;&#x9898;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>assertive</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x591A;&#x9009;&#x6846;">&#x591A;&#x9009;&#x6846;</h2>
+<h5 id="&#x7EC4;&#x4EF6;&#xFF1A;vonicvoncheckbox">&#x7EC4;&#x4EF6;&#xFF1A;Vonic.VonCheckbox</h5>
+<h5 id="&#x7528;&#x6CD5;&#xFF1A;">&#x7528;&#x6CD5;&#xFF1A;</h5>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item item-divider&quot;</span>&gt;</span>
+      &#x9009;&#x62E9;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x677F;&#x5757;:
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">von-checkbox</span> <span class="hljs-attr">:options</span>=<span class="hljs-string">&quot;topics&quot;</span> <span class="hljs-attr">:value.sync</span>=<span class="hljs-string">&quot;chosenTopics&quot;</span> <span class="hljs-attr">theme</span>=<span class="hljs-string">&quot;positive&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">von-checkbox</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+    data(){
+      <span class="hljs-keyword">return</span> {
+        chosenTopics: [],
+        topics: [<span class="hljs-string">&quot;&#x5A31;&#x4E50;&quot;</span>, <span class="hljs-string">&quot;&#x7535;&#x5F71;&quot;</span>, <span class="hljs-string">&quot;&#x51CF;&#x80A5;&quot;</span>, <span class="hljs-string">&quot;&#x641E;&#x7B11;&quot;</span>, <span class="hljs-string">&quot;&#x79D1;&#x6280;&quot;</span>]
+      }
+    }
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<h5 id="&#x5C5E;&#x6027;&#xFF1A;">&#x5C5E;&#x6027;&#xFF1A;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5FC5;&#x9009;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>options</td>
+<td>&#x9009;&#x9879;&#x5217;&#x8868;</td>
+<td>Array</td>
+<td>&#x662F;</td>
+<td>&#x65E0;</td>
+</tr>
+<tr>
+<td>value</td>
+<td>&#x503C;</td>
+<td>Array</td>
+<td>&#x662F;</td>
+<td>&#x65E0;</td>
+</tr>
+<tr>
+<td>theme</td>
+<td>&#x4E3B;&#x9898;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>assertive</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x5F00;&#x5173;&#x6309;&#x94AE;">&#x5F00;&#x5173;&#x6309;&#x94AE;</h2>
+<h5 id="&#x7EC4;&#x4EF6;&#xFF1A;vonicvontoggle">&#x7EC4;&#x4EF6;&#xFF1A;Vonic.VonToggle</h5>
+<h5 id="&#x7528;&#x6CD5;&#xFF1A;">&#x7528;&#x6CD5;&#xFF1A;</h5>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">von-toggle</span> 
+      <span class="hljs-attr">:text</span>=<span class="hljs-string">&quot;toggleText&quot;</span> 
+      <span class="hljs-attr">:value.sync</span>=<span class="hljs-string">&quot;pushNotification&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">von-toggle</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span>{
+    data(){
+      <span class="hljs-keyword">return</span> {
+        toggleText: <span class="hljs-string">&quot;&#x662F;&#x5426;&#x5F00;&#x542F;&#x63A8;&#x9001;&quot;</span>,
+        pushNotification: <span class="hljs-literal">true</span>
+      }
+    }
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<h5 id="&#x5C5E;&#x6027;&#xFF1A;">&#x5C5E;&#x6027;&#xFF1A;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5FC5;&#x9009;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>text</td>
+<td>&#x6807;&#x7B7E;&#x6587;&#x5B57;</td>
+<td>String</td>
+<td>&#x662F;</td>
+<td>&#x65E0;</td>
+</tr>
+<tr>
+<td>value</td>
+<td>&#x503C;</td>
+<td>Boolean</td>
+<td>&#x662F;</td>
+<td>&#x65E0;</td>
+</tr>
+<tr>
+<td>theme</td>
+<td>&#x4E3B;&#x9898;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>balanced</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x5F39;&#x51FA;">&#x5F39;&#x51FA;</h2>
+<h5 id="&#x7EC4;&#x4EF6;&#xFF1A;vonicpopover">&#x7EC4;&#x4EF6;&#xFF1A;Vonic.Popover</h5>
+<h5 id="&#x7528;&#x6CD5;&#xFF1A;">&#x7528;&#x6CD5;&#xFF1A;</h5>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;padding text-center&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height: 100px;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button button-positive&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;btn-top&quot;</span>&gt;</span>show popover<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">popover</span> <span class="hljs-attr">direction</span>=<span class="hljs-string">&quot;top&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;#btn-top&quot;</span>&gt;</span>
+      &#x6211;&#x5728;&#x4E0A;&#x9762;
+    <span class="hljs-tag">&lt;/<span class="hljs-name">popover</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+</code></pre>
+<h5 id="&#x5C5E;&#x6027;&#xFF1A;">&#x5C5E;&#x6027;&#xFF1A;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5FC5;&#x9009;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>direction</td>
+<td>&#x51FA;&#x73B0;&#x65B9;&#x5411;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>top</td>
+</tr>
+<tr>
+<td>target</td>
+<td>&#x6302;&#x8F7D;&#x5F39;&#x51FA;&#x7684;&#x5143;&#x7D20;</td>
+<td>String</td>
+<td>&#x662F;</td>
+<td>&#x65E0;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x8BA1;&#x6570;&#x5668;">&#x8BA1;&#x6570;&#x5668;</h2>
+<h5 id="&#x7EC4;&#x4EF6;&#xFF1A;voniccounter">&#x7EC4;&#x4EF6;&#xFF1A;Vonic.Counter</h5>
+<h5 id="&#x7528;&#x6CD5;&#xFF1A;">&#x7528;&#x6CD5;&#xFF1A;</h5>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">counter</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;width: 200px;&quot;</span> <span class="hljs-attr">:value.sync</span>=<span class="hljs-string">&quot;cnt&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">counter</span>&gt;</span>
+</code></pre>
+<h5 id="&#x5C5E;&#x6027;&#xFF1A;">&#x5C5E;&#x6027;&#xFF1A;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5FC5;&#x9009;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>value</td>
+<td>&#x503C;</td>
+<td>Number</td>
+<td>&#x662F;</td>
+<td>&#x65E0;</td>
+</tr>
+<tr>
+<td>min</td>
+<td>&#x6700;&#x5C0F;&#x503C;</td>
+<td>Number</td>
+<td>&#x5426;</td>
+<td>0</td>
+</tr>
+<tr>
+<td>max</td>
+<td>&#x6700;&#x5927;&#x503C;</td>
+<td>Number</td>
+<td>&#x5426;</td>
+<td>100</td>
+</tr>
+<tr>
+<td>theme</td>
+<td>&#x4E3B;&#x9898;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>assertive</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x6587;&#x5B57;&#x63D0;&#x793A;">&#x6587;&#x5B57;&#x63D0;&#x793A;</h2>
+<h5 id="&#x670D;&#x52A1;&#xFF1A;toast">&#x670D;&#x52A1;&#xFF1A;$toast</h5>
+<h5 id="&#x7528;&#x6CD5;&#xFF1A;">&#x7528;&#x6CD5;&#xFF1A;</h5>
+<pre><code class="lang-js"><span class="hljs-comment">/* &#x663E;&#x793A;&#x4E00;&#x4E2A;&#x6587;&#x5B57;&#x63D0;&#x793A;&#xFF0C;3&#x79D2;&#x540E;&#x5173;&#x95ED; */</span>
+$toast.show(<span class="hljs-string">&apos;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x63D0;&#x793A;&apos;</span>, <span class="hljs-number">3000</span>)
+
+<span class="hljs-comment">/* &#x663E;&#x793A;&#x4E00;&#x4E2A;&#x6587;&#x5B57;&#x63D0;&#x793A;&#xFF0C;&#x7A0D;&#x540E;&#x624B;&#x52A8;&#x5173;&#x95ED; */</span>
+$toast.show(<span class="hljs-string">&apos;&#x8FDE;&#x63A5;&#x4E2D;..&apos;</span>, <span class="hljs-number">1E10</span>)
+
+<span class="hljs-comment">/* &#x624B;&#x52A8;&#x5173;&#x95ED; */</span>
+$toast.hide()
+</code></pre>
+<h2 id="&#x52A0;&#x8F7D;&#x63D0;&#x793A;">&#x52A0;&#x8F7D;&#x63D0;&#x793A;</h2>
+<h5 id="&#x670D;&#x52A1;&#xFF1A;loading">&#x670D;&#x52A1;&#xFF1A;$loading</h5>
+<h5 id="&#x7528;&#x6CD5;&#xFF1A;">&#x7528;&#x6CD5;&#xFF1A;</h5>
+<pre><code class="lang-js"><span class="hljs-comment">/* &#x663E;&#x793A;&#x4E00;&#x4E2A;&#x52A0;&#x8F7D;&#x63D0;&#x793A;&#xFF0C;&#x7A0D;&#x540E;&#x624B;&#x52A8;&#x5173;&#x95ED; */</span>
+$loading.show(<span class="hljs-string">&apos;&#x62FC;&#x547D;&#x52A0;&#x8F7D;&#x4E2D;..&apos;</span>)
+
+<span class="hljs-comment">/* &#x624B;&#x52A8;&#x5173;&#x95ED; */</span>
+$loading.hide()
+</code></pre>
+<h2 id="&#x5217;&#x8868;&#x5E03;&#x5C40;">&#x5217;&#x8868;&#x5E03;&#x5C40;</h2>
+<h5 id="&#x7EC4;&#x4EF6;&#xFF1A;voniclist&#x3001;vonicitem&#x3001;vonichairlineitem">&#x7EC4;&#x4EF6;&#xFF1A;Vonic.List&#x3001;Vonic.Item&#x3001;Vonic.HairlineItem</h5>
+<h5 id="&#x7528;&#x6CD5;&#xFF1A;">&#x7528;&#x6CD5;&#xFF1A;</h5>
+<p>Vonic &#x5728; ionic &#x4E30;&#x5BCC;&#x7684;&#x5217;&#x8868;&#x7C7B;&#x6837;&#x5F0F;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x505A;&#x4E86;&#x5B8C;&#x5907;&#x7684;1px&#x65B9;&#x6848;&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5F15;&#x5165;&#x7EC4;&#x4EF6;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x4F7F;&#x7528;&#x5B83;&#x4EEC;&#xFF0C;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">list</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">item</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item-icon-right&quot;</span>&gt;</span>
+        &#x6587;&#x5B57;
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item-note&quot;</span>&gt;</span>
+          &#x5907;&#x6CE8;
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon ion-ios-arrow-right&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">list</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+</code></pre>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x76F8;&#x5173;&#x7684; class &#x6216; attribute&#xFF0C;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list list-ios&quot;</span> <span class="hljs-attr">thin-border</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item item-ios&quot;</span>&gt;</span>
+    Item - 1
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item-note&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>  
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item item-ios&quot;</span>&gt;</span>Item - 2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item item-ios&quot;</span>&gt;</span>Item - 3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p><a href="https://github.com/wangdahoo/vonic/blob/master/demo/components/List.vue" target="_blank">&#x67E5;&#x770B;&#x66F4;&#x591A;&#x5217;&#x8868;&#x5E03;&#x5C40;&#x4F8B;&#x5B50;</a></p>
+<h2 id="&#x5BAB;&#x683C;&#x5E03;&#x5C40;">&#x5BAB;&#x683C;&#x5E03;&#x5C40;</h2>
+<h5 id="&#x7EC4;&#x4EF6;&#xFF1A;voniccells">&#x7EC4;&#x4EF6;&#xFF1A;Vonic.Cells</h5>
+<h5 id="&#x7528;&#x6CD5;&#xFF1A;">&#x7528;&#x6CD5;&#xFF1A;</h5>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">cells</span> <span class="hljs-attr">:items</span>=<span class="hljs-string">&quot;entrances&quot;</span> <span class="hljs-attr">:on-cell-click</span>=<span class="hljs-string">&quot;onCellClick&quot;</span> <span class="hljs-attr">row</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">cells</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="handlebars"><span class="xml">
+  export default {
+    data() {
+      return {
+        entrances: [
+          &apos;<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;entrance assertive&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon ion-ios-flame&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>&#x70ED;&#x95E8;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>&apos;,
+          &apos;<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;entrance energized&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon ion-ios-star&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>&#x597D;&#x8BC4;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>&apos;,
+          &apos;<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;entrance balanced&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon ion-ios-location&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>&#x9644;&#x8FD1;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>&apos;,
+          &apos;<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;entrance positive&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon ion-ios-search&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>&#x641C;&#x7D22;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>&apos;
+        ]
+      }
+    }
+  }
+</span></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<h5 id="&#x5C5E;&#x6027;&#xFF1A;">&#x5C5E;&#x6027;&#xFF1A;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5FC5;&#x9009;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>row</td>
+<td>&#x884C;&#x6570;</td>
+<td>Number</td>
+<td>&#x5426;</td>
+<td>3</td>
+</tr>
+<tr>
+<td>col</td>
+<td>&#x5217;&#x6570;</td>
+<td>Number</td>
+<td>&#x5426;</td>
+<td>3</td>
+</tr>
+<tr>
+<td>items</td>
+<td>&#x5217;&#x8868;&#x9879;</td>
+<td>Array</td>
+<td>&#x662F;</td>
+<td>&#x65E0;</td>
+</tr>
+<tr>
+<td>onCellClick</td>
+<td>&#x5BAB;&#x683C;&#x5355;&#x5143;&#x70B9;&#x51FB;&#x56DE;&#x8C03;</td>
+<td>Function</td>
+<td>&#x5426;</td>
+<td>&#x65E0;</td>
+</tr>
+<tr>
+<td>outerBorder</td>
+<td>&#x662F;&#x5426;&#x663E;&#x793A;&#x5BAB;&#x683C;&#x5BB9;&#x5668;&#x5916;&#x8FB9;&#x6846;</td>
+<td>Boolean, String</td>
+<td>&#x5426;</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x9009;&#x9879;&#x5361;">&#x9009;&#x9879;&#x5361;</h2>
+<h5 id="&#x7EC4;&#x4EF6;&#xFF1A;vonictabs">&#x7EC4;&#x4EF6;&#xFF1A;Vonic.Tabs</h5>
+<h5 id="&#x7528;&#x6CD5;&#xFF1A;">&#x7528;&#x6CD5;&#xFF1A;</h5>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tabs</span> <span class="hljs-attr">:tab-items</span>=<span class="hljs-string">&quot;categories&quot;</span>
+          <span class="hljs-attr">:active-index.sync</span>=<span class="hljs-string">&quot;activeCategoryIndex&quot;</span>
+          <span class="hljs-attr">position</span>=<span class="hljs-string">&quot;bottom&quot;</span>
+          <span class="hljs-attr">bg-color</span>=<span class="hljs-string">&quot;assertive&quot;</span>
+          <span class="hljs-attr">tab-color</span>=<span class="hljs-string">&quot;light&quot;</span>
+          <span class="hljs-attr">:on-tab-changed</span>=<span class="hljs-string">&quot;onCategoryChanged&quot;</span>
+    &gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">tabs</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+    data() {
+      categories: [
+        <span class="hljs-string">&quot;&#x5973;&#x88C5;&quot;</span>,
+        <span class="hljs-string">&quot;&#x7537;&#x88C5;&quot;</span>,
+        <span class="hljs-string">&quot;&#x5185;&#x8863;&quot;</span>,
+        <span class="hljs-string">&quot;&#x978B;&#x9774;&quot;</span>,
+        <span class="hljs-string">&quot;&#x7BB1;&#x5305;&quot;</span>,
+        <span class="hljs-string">&quot;&#x66F4;&#x591A;&quot;</span>
+      ],
+      activeCategoryIndex: <span class="hljs-number">0</span>
+    },
+    methods: {
+      onCategoryChanged(activeIndex) {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;category changed, current tab index is:&apos;</span>, activeIndex);
+      }
+    }
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<h5 id="&#x5C5E;&#x6027;&#xFF1A;">&#x5C5E;&#x6027;&#xFF1A;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5FC5;&#x9009;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>position</td>
+<td>&#x4F4D;&#x7F6E;&#xFF0C;top/bottom</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>top</td>
+</tr>
+<tr>
+<td>bgColor</td>
+<td>&#x80CC;&#x666F;&#x8272;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>light</td>
+</tr>
+<tr>
+<td>tabColor</td>
+<td>&#x524D;&#x666F;&#x8272;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>positive</td>
+</tr>
+<tr>
+<td>tabItems</td>
+<td>&#x9009;&#x9879;&#x5217;&#x8868;</td>
+<td>Array</td>
+<td>&#x662F;</td>
+<td>&#x65E0;</td>
+</tr>
+<tr>
+<td>activeIndex</td>
+<td>&#x6FC0;&#x6D3B;&#x9009;&#x9879;&#x7D22;&#x5F15;</td>
+<td>Number</td>
+<td>&#x662F;</td>
+<td>&#x65E0;</td>
+</tr>
+<tr>
+<td>onTabChanged</td>
+<td>&#x9009;&#x9879;&#x5361;&#x70B9;&#x51FB;&#x56DE;&#x8C03;</td>
+<td>Function</td>
+<td>&#x5426;</td>
+<td>&#x65E0;</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>bgColor&#x3001;tabColor &#x503C;&#x5747;&#x4EE5; vonic &#x60C5;&#x666F;&#x8272;&#x8868;&#x793A;&#x3002;</p>
+</blockquote>
+<h2 id="ios-&#x98CE;&#x683C;&#x9009;&#x9879;&#x5361;">iOS &#x98CE;&#x683C;&#x9009;&#x9879;&#x5361;</h2>
+<h5 id="&#x7EC4;&#x4EF6;&#xFF1A;vonicbuttonbar">&#x7EC4;&#x4EF6;&#xFF1A;Vonic.ButtonBar</h5>
+<h5 id="&#x7528;&#x6CD5;&#xFF1A;">&#x7528;&#x6CD5;&#xFF1A;</h5>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;padding light-bg&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button-bar</span> <span class="hljs-attr">theme</span>=<span class="hljs-string">&quot;assertive&quot;</span> <span class="hljs-attr">:tab-items</span>=<span class="hljs-string">&quot;promotions&quot;</span> <span class="hljs-attr">:active-index.sync</span>=<span class="hljs-string">&quot;promotionIndex&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button-bar</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+    data() {
+      <span class="hljs-keyword">return</span> {
+        promotions: [<span class="hljs-string">&quot;&#x5F80;&#x671F;&#x70ED;&#x5356;&quot;</span>, <span class="hljs-string">&quot;&#x62A2;&#x8D2D;&#x8FDB;&#x884C;&#x4E2D;&quot;</span>],
+        promotionIndex: <span class="hljs-number">0</span>
+      }
+    }
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<h5 id="&#x5C5E;&#x6027;&#xFF1A;">&#x5C5E;&#x6027;&#xFF1A;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5FC5;&#x9009;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tabItems</td>
+<td>&#x9009;&#x9879;&#x5217;&#x8868;</td>
+<td>Array</td>
+<td>&#x662F;</td>
+<td>&#x65E0;</td>
+</tr>
+<tr>
+<td>activeIndex</td>
+<td>&#x6FC0;&#x6D3B;&#x9009;&#x9879;&#x7D22;&#x5F15;</td>
+<td>Number</td>
+<td>&#x662F;</td>
+<td>&#x65E0;</td>
+</tr>
+<tr>
+<td>theme</td>
+<td>&#x4E3B;&#x9898;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>positive</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x7F29;&#x653E;&#x5E03;&#x5C40;">&#x7F29;&#x653E;&#x5E03;&#x5C40;</h2>
+<blockquote>
+<p>&#x603B;&#x6709;&#x8BBE;&#x8BA1;&#x5E08;&#x62FF;&#x7740;5&#xFF0C;6&#x50CF;&#x7D20;&#x5927;&#x5C0F;&#x7684;&#x5B57;&#x8DD1;&#x6765;&#x8DDF;&#x6211;&#x8BF4;&#x5C0F;&#x800C;&#x7F8E;&#x3002;</p>
+</blockquote>
+<h5 id="&#x7EC4;&#x4EF6;&#xFF1A;vonicscalable">&#x7EC4;&#x4EF6;&#xFF1A;Vonic.Scalable</h5>
+<h5 id="&#x7528;&#x6CD5;&#xFF1A;">&#x7528;&#x6CD5;&#xFF1A;</h5>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;padding&quot;</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- &#x8BBE;&#x7F6E;&#x5BBD;&#x4E3A;&#x7236;&#x5BB9;&#x5668;&#x5BBD;&#x5EA6;&#xFF0C;&#x9AD8;&#x4E3A;100px --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">scalable</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;100%&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;100&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-color: #FFF;&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+        Font Size = 16px (&#x76F8;&#x5F53;&#x4E8E;8px)
+      <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">scalable</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+</code></pre>
+<h5 id="&#x5C5E;&#x6027;&#xFF1A;">&#x5C5E;&#x6027;&#xFF1A;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5FC5;&#x9009;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scale</td>
+<td>&#x7F29;&#x5C0F;&#x6BD4;&#x4F8B;</td>
+<td>Number</td>
+<td>&#x5426;</td>
+<td>2</td>
+</tr>
+<tr>
+<td>width</td>
+<td>&#x5BB9;&#x5668;&#x5BBD;&#x5EA6;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>height</td>
+<td>&#x5BB9;&#x5668;&#x9AD8;&#x5EA6;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x8F6E;&#x64AD;">&#x8F6E;&#x64AD;</h2>
+<h5 id="&#x7EC4;&#x4EF6;&#xFF1A;vonicswiper&#x3001;vonicswiperitem">&#x7EC4;&#x4EF6;&#xFF1A;Vonic.Swiper&#x3001;Vonic.SwiperItem</h5>
+<h5 id="&#x7528;&#x6CD5;&#xFF1A;">&#x7528;&#x6CD5;&#xFF1A;</h5>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">swiper</span> <span class="hljs-attr">direction</span>=<span class="hljs-string">&quot;vertical&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">swiper-item</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Item 1<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">swiper-item</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">swiper-item</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Item 2<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">swiper-item</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">swiper-item</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Item 3<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">swiper-item</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">swiper</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+</code></pre>
+<h5 id="&#x5C5E;&#x6027;&#xFF1A;">&#x5C5E;&#x6027;&#xFF1A;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5FC5;&#x9009;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>direction</td>
+<td>vertical/horizontal</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>vertical</td>
+</tr>
+<tr>
+<td>width</td>
+<td>&#x5BBD;&#x5EA6;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>height</td>
+<td>&#x9AD8;&#x5EA6;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>pagerColor</td>
+<td>&#x5BFC;&#x822A;&#x989C;&#x8272;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>#333</td>
+</tr>
+</tbody>
+</table>
+<h5 id="&#x65B9;&#x6CD5;&#xFF1A;">&#x65B9;&#x6CD5;&#xFF1A;</h5>
+<h6 id="void-goindex-number">Void go(index :Number)</h6>
+<blockquote>
+<p>&#x8DF3;&#x8F6C;&#x5230;&#x67D0;&#x4E00;&#x9875;</p>
+</blockquote>
+<h6 id="void-next">Void next()</h6>
+<blockquote>
+<p>&#x8DF3;&#x8F6C;&#x5230;&#x4E0B;&#x4E00;&#x9875;</p>
+</blockquote>
+<h6 id="void-prev">Void prev()</h6>
+<blockquote>
+<p>&#x8DF3;&#x8F6C;&#x5230;&#x4E0A;&#x4E00;&#x9875;</p>
+</blockquote>
+<h2 id="&#x6EDA;&#x52A8;">&#x6EDA;&#x52A8;</h2>
+<h5 id="&#x7EC4;&#x4EF6;&#xFF1A;vonicscroll">&#x7EC4;&#x4EF6;&#xFF1A;Vonic.Scroll</h5>
+<h5 id="&#x7528;&#x6CD5;&#xFF1A;">&#x7528;&#x6CD5;&#xFF1A;</h5>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page has-navbar&quot;</span> <span class="hljs-attr">v-nav</span>=<span class="hljs-string">&quot;{title: &apos;Scroll&apos;}&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">scroll</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-content&quot;</span>
+            <span class="hljs-attr">:on-refresh</span>=<span class="hljs-string">&quot;onRefresh&quot;</span>
+            <span class="hljs-attr">:on-infinite</span>=<span class="hljs-string">&quot;onInfinite&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;(index, item) in items&quot;</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;onItemClick(index, item)&quot;</span>
+           <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item thin-border&quot;</span> <span class="hljs-attr">:class</span>=<span class="hljs-string">&quot;{&apos;item-stable&apos;: index % 2 == 0}&quot;</span>&gt;</span>
+        {{ item }}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">scroll</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+    data () {
+      <span class="hljs-keyword">return</span> {
+        items: []
+      }
+    },
+
+    ready() {
+      <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">1</span>; i &lt;= <span class="hljs-number">20</span>; i++) {
+        <span class="hljs-keyword">this</span>.items.push(i + <span class="hljs-string">&apos; - keep walking, be 2 with you.&apos;</span>)
+      }
+      <span class="hljs-keyword">this</span>.top = <span class="hljs-number">1</span>
+      <span class="hljs-keyword">this</span>.bottom = <span class="hljs-number">20</span>
+    },
+
+    methods: {
+      onRefresh(done) {
+        setTimeout(() =&gt; {
+          <span class="hljs-keyword">let</span> start = <span class="hljs-keyword">this</span>.top - <span class="hljs-number">1</span>
+          <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = start; i &gt; start - <span class="hljs-number">10</span>; i--) {
+            <span class="hljs-keyword">this</span>.items.splice(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, i + <span class="hljs-string">&apos; - keep walking, be 2 with you.&apos;</span>)
+          }
+          <span class="hljs-keyword">this</span>.top = <span class="hljs-keyword">this</span>.top - <span class="hljs-number">10</span>;
+
+          done()
+        }, <span class="hljs-number">1500</span>)
+      },
+
+      onInfinite(done) {
+        setTimeout(() =&gt; {
+          <span class="hljs-keyword">let</span> start = <span class="hljs-keyword">this</span>.bottom + <span class="hljs-number">1</span>
+          <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = start; i &lt; start + <span class="hljs-number">10</span>; i++) {
+            <span class="hljs-keyword">this</span>.items.push(i + <span class="hljs-string">&apos; - keep walking, be 2 with you.&apos;</span>)
+          }
+          <span class="hljs-keyword">this</span>.bottom = <span class="hljs-keyword">this</span>.bottom + <span class="hljs-number">10</span>;
+
+          done()
+        }, <span class="hljs-number">1500</span>)
+      },
+
+      onItemClick(index, item) {
+        <span class="hljs-built_in">console</span>.log(index)
+      }
+    }
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p><a href="https://jsfiddle.net/wangdahoo/o72t05uk/" target="_blank">&#x67E5;&#x770B;&#x7EBF;&#x4E0A;&#x4F8B;&#x5B50;</a></p>
+<h5 id="&#x5C5E;&#x6027;&#xFF1A;">&#x5C5E;&#x6027;&#xFF1A;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5FC5;&#x9009;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>onRefresh</td>
+<td>&#x4E0B;&#x62C9;&#x5237;&#x65B0;&#x56DE;&#x8C03;</td>
+<td>Function</td>
+<td>&#x5426;</td>
+<td>&#x65E0;</td>
+</tr>
+<tr>
+<td>onInfinite</td>
+<td>&#x65E0;&#x7EBF;&#x52A0;&#x8F7D;&#x56DE;&#x8C03;</td>
+<td>Function</td>
+<td>&#x5426;</td>
+<td>&#x65E0;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="vue-scroller">Vue Scroller</h2>
+<h5 id="&#x7EC4;&#x4EF6;&#xFF1A;vonicvuescroller">&#x7EC4;&#x4EF6;&#xFF1A;Vonic.VueScroller</h5>
+<p>Vonic &#x6574;&#x5408;&#x4E86; <a href="https://github.com/wangdahoo/vue-scroller" target="_blank">VueScroller</a>&#x3002;&#x5173;&#x4E8E; VueScroller &#x7684;&#x7528;&#x6CD5;&#x53CA;&#x4F8B;&#x5B50;&#xFF0C;&#x8BF7;<a href="https://wangdahoo.github.io/vue-scroller/#!/index" target="_blank">&#x67E5;&#x770B;&#x8FD9;&#x91CC;</a>&#x3002;</p>
+<h2 id="&#x7EA7;&#x8054;">&#x7EA7;&#x8054;</h2>
+<h5 id="&#x7EC4;&#x4EF6;&#xFF1A;voniccascade">&#x7EC4;&#x4EF6;&#xFF1A;Vonic.Cascade</h5>
+<h5 id="&#x7528;&#x6CD5;&#xFF1A;&#x67E5;&#x770B;&#x7EBF;&#x4E0A;&#x4F8B;&#x5B50;">&#x7528;&#x6CD5;&#xFF1A;<a href="https://jsfiddle.net/wangdahoo/ac5k5y31/" target="_blank">&#x67E5;&#x770B;&#x7EBF;&#x4E0A;&#x4F8B;&#x5B50;</a></h5>
+<h5 id="&#x5C5E;&#x6027;&#xFF1A;">&#x5C5E;&#x6027;&#xFF1A;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5FC5;&#x9009;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fields</td>
+<td>&#x5B57;&#x6BB5;&#x5217;&#x8868;</td>
+<td>Array</td>
+<td>&#x662F;</td>
+<td>&#x65E0;</td>
+</tr>
+<tr>
+<td>data</td>
+<td>&#x6570;&#x636E;&#xFF08;&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;&#xFF09;</td>
+<td>Array</td>
+<td>&#x5426;</td>
+<td>&#x65E0;</td>
+</tr>
+<tr>
+<td>value</td>
+<td>&#x503C;</td>
+<td>Array</td>
+<td>&#x662F;</td>
+<td>&#x65E0;</td>
+</tr>
+<tr>
+<td>ajaxUrl</td>
+<td>&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x7684;url</td>
+<td>Array</td>
+<td>&#x5426;</td>
+<td>&#x65E0;</td>
+</tr>
+<tr>
+<td>ajaxData</td>
+<td>url&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x5BF9;&#x5E94;&#x7684;&#x5B57;&#x6BB5;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x65E0;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x5BF9;&#x8BDD;&#x6846;">&#x5BF9;&#x8BDD;&#x6846;</h2>
+<h5 id="&#x670D;&#x52A1;&#xFF1A;dialog">&#x670D;&#x52A1;&#xFF1A;$dialog</h5>
+<h5 id="&#x7528;&#x6CD5;&#xFF1A;">&#x7528;&#x6CD5;&#xFF1A;</h5>
+<pre><code class="lang-js"><span class="hljs-comment">/* Alert &#x8B66;&#x544A;&#x6846; */</span>
+$dialog.alert({
+  <span class="hljs-comment">// &#x6548;&#x679C;</span>
+  effect: <span class="hljs-string">&apos;default&apos;</span>,
+  <span class="hljs-comment">// &#x6807;&#x9898;</span>
+  title: <span class="hljs-string">&apos;&#x63D0;&#x793A;&apos;</span>, 
+  <span class="hljs-comment">// &#x5185;&#x5BB9;</span>
+  content: <span class="hljs-string">&apos;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x8B66;&#x544A;&#x6846;&apos;</span>,
+  <span class="hljs-comment">// &#x6309;&#x94AE;&#x6587;&#x672C;</span>
+  okText: <span class="hljs-string">&apos;&#x786E;&#x5B9A;&apos;</span>,
+  <span class="hljs-comment">// &#x6309;&#x94AE;&#x4E3B;&#x9898;</span>
+  okTheme: <span class="hljs-string">&apos;assertive&apos;</span>
+})
+
+<span class="hljs-comment">/* Confirm &#x786E;&#x8BA4;&#x6846; */</span>
+$dialog.confirm({
+  <span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x4E3A;ios&#x6837;&#x5F0F;</span>
+  theme: <span class="hljs-string">&apos;ios&apos;</span>,
+  <span class="hljs-comment">// &#x6807;&#x9898;</span>
+  title: <span class="hljs-string">&apos;&#x5728;&quot;&#x5FAE;&#x4FE1;&quot;&#x4E2D;&#x6253;&#x5F00;&#x94FE;&#x63A5;&#x5417;?&apos;</span>,
+  <span class="hljs-comment">// &#x53D6;&#x6D88;&#x6309;&#x94AE;&#x6587;&#x672C;</span>
+  cancelText: <span class="hljs-string">&apos;&#x53D6;&#x6D88;&apos;</span>,
+  <span class="hljs-comment">// &#x786E;&#x5B9A;&#x6309;&#x94AE;&#x6587;&#x672C;</span>
+  okText: <span class="hljs-string">&apos;&#x6253;&#x5F00;&apos;</span>
+}).then((res) =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;confirm result: &apos;</span>, res)
+})
+</code></pre>
+<p><a href="https://github.com/wangdahoo/vonic/blob/master/demo/components/Popup.vue" target="_blank">&#x67E5;&#x770B;&#x66F4;&#x591A;$dialog&#x4F7F;&#x7528;&#x4F8B;&#x5B50;</a></p>
+<h5 id="&#x65B9;&#x6CD5;&#xFF1A;">&#x65B9;&#x6CD5;&#xFF1A;</h5>
+<h6 id="promise-alertoptions-object">Promise alert(options: Object)</h6>
+<p>options &#x53C2;&#x6570;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5FC5;&#x9009;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>effect</td>
+<td>&#x6548;&#x679C; default&#x3001;scale&#x3001;slide</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>default</td>
+</tr>
+<tr>
+<td>title</td>
+<td>&#x6807;&#x9898;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x63D0;&#x793A;</td>
+</tr>
+<tr>
+<td>content</td>
+<td>&#x5185;&#x5BB9;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x65E0;</td>
+</tr>
+<tr>
+<td>okText</td>
+<td>&#x6309;&#x94AE;&#x6587;&#x672C;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x786E;&#x5B9A;</td>
+</tr>
+<tr>
+<td>okTheme</td>
+<td>&#x6309;&#x94AE;&#x4E3B;&#x9898;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>assertive</td>
+</tr>
+<tr>
+<td>theme</td>
+<td>&#x4E3B;&#x9898;&#x6837;&#x5F0F; default&#x3001;ios</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>default</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>&#x5F53; theme &#x503C;&#x4E3A; ios &#x65F6;&#xFF0C;&#x5176;&#x4ED6;&#x4E3B;&#x9898;&#x76F8;&#x5173;&#x7684;&#x53C2;&#x6570;&#xFF08;okTheme, cancelTheme&#xFF0C;effect&#x7B49;&#xFF09;&#x5C06;&#x4E0D;&#x518D;&#x8D77;&#x4F5C;&#x7528;&#x3002;</p>
+</blockquote>
+<h6 id="promise-confirmoptions-object">Promise confirm(options: Object)</h6>
+<p>options &#x53C2;&#x6570;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5FC5;&#x9009;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>effect</td>
+<td>&#x6548;&#x679C; default/scale/slide</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>default</td>
+</tr>
+<tr>
+<td>title</td>
+<td>&#x6807;&#x9898;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x63D0;&#x793A;</td>
+</tr>
+<tr>
+<td>content</td>
+<td>&#x5185;&#x5BB9;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x65E0;</td>
+</tr>
+<tr>
+<td>okText</td>
+<td>&#x786E;&#x5B9A;&#x6309;&#x94AE;&#x6587;&#x672C;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x786E;&#x5B9A;</td>
+</tr>
+<tr>
+<td>okTheme</td>
+<td>&#x786E;&#x5B9A;&#x6309;&#x94AE;&#x4E3B;&#x9898;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>assertive</td>
+</tr>
+<tr>
+<td>cancelText</td>
+<td>&#x53D6;&#x6D88;&#x6309;&#x94AE;&#x6587;&#x672C;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x786E;&#x5B9A;</td>
+</tr>
+<tr>
+<td>cancelTheme</td>
+<td>&#x53D6;&#x6D88;&#x6309;&#x94AE;&#x4E3B;&#x9898;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>default</td>
+</tr>
+<tr>
+<td>theme</td>
+<td>&#x4E3B;&#x9898;&#x6837;&#x5F0F; default&#x3001;ios</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>default</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>&#x5F53; theme &#x503C;&#x4E3A; ios &#x65F6;&#xFF0C;&#x5176;&#x4ED6;&#x4E3B;&#x9898;&#x76F8;&#x5173;&#x7684;&#x53C2;&#x6570;&#xFF08;okTheme, cancelTheme&#xFF0C;effect&#x7B49;&#xFF09;&#x5C06;&#x4E0D;&#x518D;&#x8D77;&#x4F5C;&#x7528;&#x3002;</p>
+</blockquote>
+<h2 id="&#x5F39;&#x5C42;">&#x5F39;&#x5C42;</h2>
+<h5 id="&#x670D;&#x52A1;&#xFF1A;popup">&#x670D;&#x52A1;&#xFF1A;$popup</h5>
+<h5 id="&#x7528;&#x6CD5;&#xFF1A;">&#x7528;&#x6CD5;&#xFF1A;</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> options = {
+  effect: <span class="hljs-string">&apos;scale&apos;</span>,
+  title: <span class="hljs-string">&apos;&apos;</span>,
+  buttons: [
+    {text: <span class="hljs-string">&apos;&#x786E;&#x5B9A;&apos;</span>},
+    {text: <span class="hljs-string">&apos;&#x53D6;&#x6D88;&apos;</span>},
+  ]
+}
+
+<span class="hljs-keyword">let</span> popup = $popup.fromTemplate(<span class="hljs-string">&apos;&lt;p style=&quot;margin-bottom: 0; text-align: center;&quot;&gt;&#x81EA;&#x5B9A;&#x4E49;&#x5185;&#x5BB9;&lt;/p&gt;&apos;</span>, options)
+
+popup.show().then((buttonIndex) =&gt; {
+  <span class="hljs-built_in">console</span>.log(buttonIndex)
+})
+</code></pre>
+<h5 id="&#x65B9;&#x6CD5;&#xFF1A;">&#x65B9;&#x6CD5;&#xFF1A;</h5>
+<h6 id="popup-fromtemplatetemplate-string-options-object">Popup fromTemplate(template: String, options: Object)</h6>
+<blockquote>
+<p>&#x6309;&#x6A21;&#x677F;&#x5B57;&#x7B26;&#x4E32;&#x521B;&#x5EFA;&#x5F39;&#x5C42;&#x5B9E;&#x4F8B;</p>
+</blockquote>
+<p>template&#xFF1A;&#x81EA;&#x5B9A;&#x4E49;popup&#x6A21;&#x677F;&#x5B57;&#x7B26;&#x4E32;</p>
+<p>options &#x53C2;&#x6570;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5FC5;&#x9009;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>effect</td>
+<td>&#x6548;&#x679C; default/scale/slide</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>default</td>
+</tr>
+<tr>
+<td>title</td>
+<td>&#x6807;&#x9898;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x65E0;</td>
+</tr>
+<tr>
+<td>cssClass</td>
+<td>&#x81EA;&#x5B9A;&#x4E49;&#x6837;&#x5F0F;&#x7C7B;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>&#x65E0;</td>
+</tr>
+<tr>
+<td>buttons</td>
+<td>&#x6309;&#x94AE;&#x5B9A;&#x4E49;</td>
+<td>Array</td>
+<td>&#x5426;</td>
+<td>&#x65E0;</td>
+</tr>
+</tbody>
+</table>
+<h6 id="popup-fromtemplateurltemplateurl-string-options-object">Popup fromTemplateUrl(templateUrl: String, options: Object)</h6>
+<blockquote>
+<p>&#x901A;&#x8FC7;ajax&#x6309;templateUrl&#x8FD4;&#x56DE;&#x6A21;&#x677F;&#x5B57;&#x7B26;&#x4E32;&#x521B;&#x5EFA;&#x5F39;&#x5C42;&#x5B9E;&#x4F8B;</p>
+</blockquote>
+<p>templateUrl&#xFF1A;&#x8FD4;&#x56DE;&#x6A21;&#x677F;&#x5B57;&#x7B26;&#x4E32;&#x7684;url</p>
+<p>options &#x53C2;&#x6570;&#xFF1A;</p>
+<p>&#x540C;&#x4E0A;</p>
+<h5 id="popup-&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#xFF1A;">Popup &#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#xFF1A;</h5>
+<h6 id="promise-show">Promise show()</h6>
+<blockquote>
+<p>&#x663E;&#x793A;&#x5F39;&#x5C42;</p>
+</blockquote>
+<h6 id="void-hide">Void hide()</h6>
+<blockquote>
+<p>&#x5173;&#x95ED;&#x5F39;&#x5C42;</p>
+</blockquote>
+<h2 id="&#x6A21;&#x6001;&#x7A97;">&#x6A21;&#x6001;&#x7A97;</h2>
+<h5 id="&#x670D;&#x52A1;&#xFF1A;vonicmodal">&#x670D;&#x52A1;&#xFF1A;$vonicModal</h5>
+<h5 id="&#x7528;&#x6CD5;&#xFF1A;&#x53C2;&#x8003;&#x5B98;&#x65B9;&#x8303;&#x4F8B;">&#x7528;&#x6CD5;&#xFF1A;<a href="https://github.com/wangdahoo/vonic/blob/master/demo/components/Modal.vue" target="_blank">&#x53C2;&#x8003;&#x5B98;&#x65B9;&#x8303;&#x4F8B;</a></h5>
+<h5 id="&#x65B9;&#x6CD5;&#xFF1A;">&#x65B9;&#x6CD5;&#xFF1A;</h5>
+<h6 id="void-fromcomponentmodalref-string-modalcomponent-object">Void fromComponent(modalRef: String, modalComponent: Object)</h6>
+<blockquote>
+<p>&#x6CE8;&#x518C;&#x6A21;&#x6001;&#x7A97;</p>
+</blockquote>
+<h6 id="void-showmodalref-string">Void show(modalRef: String)</h6>
+<blockquote>
+<p>&#x663E;&#x793A;&#x6A21;&#x6001;&#x7A97;</p>
+</blockquote>
+<h6 id="void-hidemodalref-string">Void hide(modalRef: String)</h6>
+<blockquote>
+<p>&#x5173;&#x95ED;&#x6A21;&#x6001;&#x7A97;</p>
+</blockquote>
+<h5 id="void-destroy">Void destroy()</h5>
+<blockquote>
+<p>&#x9500;&#x6BC1;&#x6240;&#x6709;&#x6A21;&#x6001;&#x7A97;&#x5B9E;&#x4F8B;</p>
+</blockquote>
+<h2 id="actionsheet">ActionSheet</h2>
+<h5 id="&#x670D;&#x52A1;&#xFF1A;actionsheet">&#x670D;&#x52A1;&#xFF1A;$actionSheet</h5>
+<h5 id="&#x7528;&#x6CD5;&#xFF1A;">&#x7528;&#x6CD5;&#xFF1A;</h5>
+<pre><code class="lang-js">$actionSheet.show({
+  <span class="hljs-comment">// &#x652F;&#x6301;&#x4E09;&#x79CD;&#x4E3B;&#x9898;&#x6837;&#x5F0F; ios/android/weixin</span>
+  theme: <span class="hljs-string">&apos;weixin&apos;</span>,
+  title: <span class="hljs-string">&apos;&#x6807;&#x9898;&apos;</span>,
+  buttons: {
+    <span class="hljs-string">&apos;Action - 1&apos;</span>: () =&gt; {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;action 1 called.&apos;</span>)
+    },
+
+    <span class="hljs-string">&apos;Action - 2&apos;</span>: () =&gt; {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;action 2 called.&apos;</span>)
+    }
+  }
+})
+</code></pre>
+<h2 id="&#x4FA7;&#x8FB9;&#x680F;">&#x4FA7;&#x8FB9;&#x680F;</h2>
+<h5 id="&#x670D;&#x52A1;&#xFF1A;sidebar">&#x670D;&#x52A1;&#xFF1A;$sidebar</h5>
+<h5 id="&#x7528;&#x6CD5;&#xFF1A;">&#x7528;&#x6CD5;&#xFF1A;</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> template = <span class="hljs-string">`
+  &lt;p style=&quot;font-size: 14; line-height: 18px;&quot;&gt;
+    This is my December
+    This is my time of the year
+    This is my December
+    This is all so clear
+  &lt;/p&gt;
+`</span>
+<span class="hljs-keyword">let</span> sidebar = $sidebar.fromTemplate(template, {position: <span class="hljs-string">&apos;left&apos;</span>})
+sidebar.open()
+</code></pre>
+<h5 id="&#x65B9;&#x6CD5;&#xFF1A;">&#x65B9;&#x6CD5;&#xFF1A;</h5>
+<h6 id="sidebar-fromtemplatetemplate-string-options-object">Sidebar fromTemplate(template: String, options: Object)</h6>
+<blockquote>
+<p>&#x6309;&#x6A21;&#x677F;&#x5B57;&#x7B26;&#x4E32;&#x521B;&#x5EFA;&#x4FA7;&#x8FB9;&#x680F;&#x5B9E;&#x4F8B;</p>
+</blockquote>
+<h6 id="sidebar-fromtemplateurltemplateurl-string-options-object">Sidebar fromTemplateUrl(templateUrl: String, options: Object)</h6>
+<blockquote>
+<p>&#x6309;&#x8FDC;&#x7A0B;&#x6A21;&#x677F;&#x5730;&#x5740;&#x8FD4;&#x56DE;&#x7684;&#x6A21;&#x677F;&#x5B57;&#x7B26;&#x4E32;&#x521B;&#x5EFA;&#x4FA7;&#x8FB9;&#x680F;&#x5B9E;&#x4F8B;</p>
+</blockquote>
+<h5 id="&#x4FA7;&#x8FB9;&#x680F;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#xFF1A;">&#x4FA7;&#x8FB9;&#x680F;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#xFF1A;</h5>
+<h6 id="void-toggle">Void toggle()</h6>
+<blockquote>
+<p>&#x5207;&#x6362;</p>
+</blockquote>
+<h6 id="void-open">Void open()</h6>
+<blockquote>
+<p>&#x6253;&#x5F00;</p>
+</blockquote>
+<h6 id="void-close">Void close()</h6>
+<blockquote>
+<p>&#x5173;&#x95ED;</p>
+</blockquote>
+<h2 id="tabbar">Tabbar</h2>
+<h5 id="&#x6307;&#x4EE4;&#xFF1A;v-tabbar">&#x6307;&#x4EE4;&#xFF1A;v-tabbar</h5>
+<h5 id="&#x7528;&#x6CD5;&#xFF1A;">&#x7528;&#x6CD5;&#xFF1A;</h5>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">v-tabbar</span>=<span class="hljs-string">&quot;{&apos;menus&apos;: menus, menuColor: &apos;#888&apos;, activeMenuColor: &apos;#FF4400&apos;, onMenuClick: menuClicked}&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">router-view</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">router-view</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+    data() {
+      <span class="hljs-keyword">return</span> {
+        menus: [
+          {
+            iconOn: <span class="hljs-string">&apos;ion-ios-home&apos;</span>,
+            iconOff: <span class="hljs-string">&apos;ion-ios-home-outline&apos;</span>,
+            text: <span class="hljs-string">&apos;&#x9996;&#x9875;&apos;</span>,
+            path: <span class="hljs-string">&apos;/advanced/tabbar/home&apos;</span>
+          },
+          {
+            iconOn: <span class="hljs-string">&apos;ion-ios-pricetags&apos;</span>,
+            iconOff: <span class="hljs-string">&apos;ion-ios-pricetags-outline&apos;</span>,
+            text: <span class="hljs-string">&apos;&#x6298;&#x6263;&apos;</span>,
+            path: <span class="hljs-string">&apos;/advanced/tabbar/discount&apos;</span>
+          },
+          {
+            iconOn: <span class="hljs-string">&apos;ion-ios-cart&apos;</span>,
+            iconOff: <span class="hljs-string">&apos;ion-ios-cart-outline&apos;</span>,
+            text: <span class="hljs-string">&apos;&#x8D2D;&#x7269;&#x8F66;&apos;</span>,
+            path: <span class="hljs-string">&apos;/advanced/tabbar/cart&apos;</span>
+          },
+          {
+            iconOn: <span class="hljs-string">&apos;ion-ios-person&apos;</span>,
+            iconOff: <span class="hljs-string">&apos;ion-ios-person-outline&apos;</span>,
+            text: <span class="hljs-string">&apos;&#x6211;&#x7684;&apos;</span>,
+            path: <span class="hljs-string">&apos;/advanced/tabbar/user&apos;</span>
+          }
+        ]
+      }
+    },
+
+    methods: {
+      menuClicked(menuIndex) {
+        <span class="hljs-built_in">console</span>.log(menuIndex)
+      }
+    },
+
+    beforeDestroy() {
+      $tabbar.$emit(<span class="hljs-string">&apos;hideTabbar&apos;</span>)
+    }
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>&#x5BF9;&#x5E94;&#x7684;&#x5D4C;&#x5957;&#x8DEF;&#x7531;&#x914D;&#x7F6E;&#xFF1A;</p>
+<pre><code class="lang-js">  <span class="hljs-comment">// other routes</span>
+  <span class="hljs-string">&apos;/advanced/tabbar&apos;</span>: {
+    component: TabBar,
+    subRoutes: {
+      <span class="hljs-string">&apos;/home&apos;</span>: {
+        component: TabBarHome
+      },
+      <span class="hljs-string">&apos;/discount&apos;</span>: {
+        component: TabBarDiscount
+      },
+      <span class="hljs-string">&apos;/cart&apos;</span>: {
+        component: TabBarCart
+      },
+      <span class="hljs-string">&apos;/user&apos;</span>: {
+        component: TabBarUser
+      }
+    }
+  },
+  <span class="hljs-comment">// other routes</span>
+</code></pre>
+<h5 id="&#x53C2;&#x6570;&#xFF1A;">&#x53C2;&#x6570;&#xFF1A;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5FC5;&#x9009;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>menus</td>
+<td>&#x83DC;&#x5355;&#x9879;&#x5217;&#x8868;</td>
+<td>Array</td>
+<td>&#x662F;</td>
+<td>&#x65E0;</td>
+</tr>
+<tr>
+<td>menuColor</td>
+<td>&#x83DC;&#x5355;&#x5B57;&#x4F53;&#x989C;&#x8272;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>#888</td>
+</tr>
+<tr>
+<td>activeMenuColor</td>
+<td>&#x6FC0;&#x6D3B;&#x83DC;&#x5355;&#x5B57;&#x4F53;&#x989C;&#x8272;</td>
+<td>String</td>
+<td>&#x5426;</td>
+<td>#EA5A49</td>
+</tr>
+<tr>
+<td>onMenuClick</td>
+<td>&#x83DC;&#x5355;&#x70B9;&#x51FB;&#x56DE;&#x8C03;</td>
+<td>Function</td>
+<td>&#x5426;</td>
+<td>#EA5A49</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x672C;&#x5730;&#x5B58;&#x50A8;">&#x672C;&#x5730;&#x5B58;&#x50A8;</h2>
+<h5 id="&#x670D;&#x52A1;&#xFF1A;storage">&#x670D;&#x52A1;&#xFF1A;$storage</h5>
+<blockquote>
+<p>Vonic &#x5BF9; localStorage &#x7684;&#x7B80;&#x6613;&#x5C01;&#x88C5;</p>
+</blockquote>
+<h5 id="&#x65B9;&#x6CD5;&#xFF1A;">&#x65B9;&#x6CD5;&#xFF1A;</h5>
+<h6 id="void-setkey-string-value-object">Void set(key: String, value: Object)</h6>
+<blockquote>
+<p>&#x4FDD;&#x5B58;</p>
+</blockquote>
+<h6 id="void-getkey-string">Void get(key: String)</h6>
+<blockquote>
+<p>&#x8BFB;&#x53D6;</p>
+</blockquote>
+<h6 id="void-removekey-string">Void remove(key: String)</h6>
+<blockquote>
+<p>&#x6E05;&#x9664;</p>
+</blockquote>
+<h6 id="void-clear">Void clear()</h6>
+<blockquote>
+<p>&#x6E05;&#x9664;&#x5168;&#x90E8;</p>
+</blockquote>
+<h6 id="void-onkey-string-callback-function">Void on(key: String, callback: Function)</h6>
+<blockquote>
+<p>&#x76D1;&#x542C;</p>
+</blockquote>
+<h6 id="void-offkey-string-callback-function">Void off(key: String, callback: Function)</h6>
+<blockquote>
+<p>&#x53BB;&#x9664;&#x76D1;&#x542C;</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="04_page_nav_and_router.html" class="navigation navigation-prev " aria-label="Previous page: 页面、导航及路由">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="05_API.html#material-design-button" class="navigation navigation-next " aria-label="Next page: Material Design Button">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"API","level":"1.6","depth":1,"next":{"title":"Material Design Button","level":"1.6.1","depth":2,"anchor":"#material-design-button","path":"05_API.md","ref":"05_API.md#material-design-button","articles":[]},"previous":{"title":"页面、导航及路由","level":"1.5","depth":1,"path":"04_page_nav_and_router.md","ref":"04_page_nav_and_router.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Vonic Documents","language":"zh-CN","gitbook":"*"},"file":{"path":"05_API.md","mtime":"2017-02-03T13:01:36.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-15T13:06:16.870Z"},"basePath":".","book":{"language":"zh-CN"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
